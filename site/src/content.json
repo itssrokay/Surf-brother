@@ -228,7 +228,7 @@
   "gallery": [
     {
       "id": "grounds",
-      "file": "hero.webp",
+      "file": "/media/uploads/hero.webp",
       "thumb": "dji_20250102001341_0236_d-small.webp",
       "alt": "Aerial view of the turquoise-trimmed SurfBrothers house among coconut palms",
       "title": "Our little corner of Mulki",
@@ -237,7 +237,7 @@
     },
     {
       "id": "bunks",
-      "file": "stay-6.webp",
+      "file": "/media/uploads/stay-6.webp",
       "thumb": "stay-6-small.webp",
       "alt": "Owner photograph of a room with bunk beds, fans and a washbasin",
       "title": "Inside the hostel",
@@ -246,7 +246,7 @@
     },
     {
       "id": "camping",
-      "file": "stay-4.webp",
+      "file": "/media/uploads/stay-4.webp",
       "thumb": "stay-4-small.webp",
       "alt": "Green tent, outdoor chairs and a hammock under coconut palms",
       "title": "Camping under the palms",
@@ -255,7 +255,7 @@
     },
     {
       "id": "shared",
-      "file": "stay-7.webp",
+      "file": "/media/uploads/stay-7.webp",
       "thumb": "stay-7-small.webp",
       "alt": "Shared indoor room with seating, a table and exposed roof beams",
       "title": "Room to hang out",
@@ -264,7 +264,7 @@
     },
     {
       "id": "beds",
-      "file": "stay-8.webp",
+      "file": "/media/uploads/stay-8.webp",
       "thumb": "stay-8-small.webp",
       "alt": "Two single beds with patterned bedding in an owner-supplied room photo",
       "title": "A look inside the rooms",
@@ -273,7 +273,7 @@
     },
     {
       "id": "night",
-      "file": "img_8272.webp",
+      "file": "/media/uploads/img_8272.webp",
       "thumb": "img_8272-small.webp",
       "alt": "SurfBrothers veranda and grounds under warm string lights in the evening",
       "title": "The house after sunset",
@@ -282,7 +282,7 @@
     },
     {
       "id": "tents",
-      "file": "img_8225.webp",
+      "file": "/media/uploads/img_8225.webp",
       "thumb": "img_8225-small.webp",
       "alt": "A row of green tents beneath a shade canopy in the outdoor grounds",
       "title": "A slower place to wake up",
@@ -291,7 +291,7 @@
     },
     {
       "id": "movie",
-      "file": "img_8229.webp",
+      "file": "/media/uploads/img_8229.webp",
       "thumb": "img_8229-small.webp",
       "alt": "People watching a screen in an open-sided covered space at night",
       "title": "A movie night, caught on camera",

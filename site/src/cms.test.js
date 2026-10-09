@@ -20,6 +20,18 @@ test('CMS keeps unrelated content and protects package identity fields', async (
   for (const entry of config.content) {
     assert.equal(entry.path, 'site/src/content.json');
     for (const field of entry.fields) assert.ok(field.name in source, field.name);
+    // Pages CMS replaces submitted arrays; preserve every key in their items.
+    const inspect = (fields, data, insideArray = false) => {
+      if (insideArray) for (const key of Object.keys(data))
+        assert.ok(fields.some(field => field.name === key), `CMS array must preserve ${key}`);
+      for (const field of fields) {
+        if (!field.fields || data[field.name] == null) continue;
+        const value = data[field.name];
+        if (field.list) value.forEach(item => inspect(field.fields, item, true));
+        else inspect(field.fields, value);
+      }
+    };
+    inspect(entry.fields, source);
   }
   const prices = config.content.find(x => x.name === 'prices').fields[0];
   for (const mode of ['surfOnly', 'staySurf']) {
@@ -31,6 +43,7 @@ test('CMS keeps unrelated content and protects package identity fields', async (
 });
 
 test('edited rates and terms reach FAQs and enquiries without stale copied prices', () => {
+  const originalVegRate = source.packages.meals.find(x => x.id === 'veg').rate;
   const edited = structuredClone(source);
   edited.packages.meals.find(x => x.id === 'veg').rate = 350;
   edited.packages.surfOnly.courses.find(x => x.days === 1).rate = 2200;
@@ -46,7 +59,7 @@ test('edited rates and terms reach FAQs and enquiries without stale copied price
   assert.match(message, /Listed rate: ₹9,500/);
   assert.match(message, /Veg, ₹350\/day/);
   assert.doesNotMatch(message, /Total:|₹19,000/);
-  assert.equal(source.packages.meals.find(x => x.id === 'veg').rate, 300);
+  assert.equal(source.packages.meals.find(x => x.id === 'veg').rate, originalVegRate);
 });
 
 test('invalid CMS edits stop a build before broken prices or gallery IDs publish', () => {

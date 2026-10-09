@@ -22,13 +22,19 @@ export async function preparePhotos(root, content) {
     if ((await stat(source)).size > 15 * 1024 * 1024)
       throw new Error(`Photo exceeds 15 MB: ${relative}. Resize it before uploading.`);
     const input = await readFile(source);
+    const metadata = await sharp(input, { limitInputPixels: 40000000 }).metadata();
     const hash = createHash('sha256').update(input).update('webp-v1-1440-640-78').digest('hex').slice(0, 16);
     const name = path.basename(relative, path.extname(relative)).replace(/[^a-zA-Z0-9_-]/g, '-').slice(0, 64);
     await mkdir(generatedDir, { recursive: true });
     const result = {};
     for (const [variant, width] of [['full', 1440], ['thumb', 640]]) {
       const filename = `${name}-${hash}-${width}.webp`;
-      const output = await sharp(input, { limitInputPixels: 40000000 })
+      // Existing optimized owner WebPs keep their exact bytes at full size.
+      const alreadyOptimized = variant === 'full' && metadata.format === 'webp'
+        && metadata.width <= width && metadata.height <= width
+        && !metadata.exif && !metadata.xmp && !metadata.icc && !metadata.orientation
+        && (!metadata.pages || metadata.pages === 1);
+      const output = alreadyOptimized ? input : await sharp(input, { limitInputPixels: 40000000 })
         .rotate().resize({ width, height: width, fit: 'inside', withoutEnlargement: true })
         .webp({ quality: 78 }).toBuffer();
       await writeFile(path.join(generatedDir, filename), output);

@@ -215,6 +215,11 @@ content:
                 options:
                   min: 0
                   max: 1000000
+              - name: basis
+                label: Meal price basis
+                type: string
+                readonly: true
+                hidden: true
             list:
               min: 3
               max: 3
