@@ -7,9 +7,11 @@
     "dev": "vite --host 127.0.0.1 --port 5173 --strictPort",
     "build": "vite build && node ../scripts/prepare_dist.mjs",
     "preview": "vite preview --host 127.0.0.1 --port 4173 --strictPort",
-    "test": "node --test src/packages.test.js src/frame-packs.test.js src/weather.test.js"
+    "test": "node --test src/packages.test.js src/frame-packs.test.js src/weather.test.js src/cms.test.js"
   },
   "devDependencies": {
-    "vite": "^7.1.0"
+    "sharp": "^0.35.5",
+    "vite": "^7.1.0",
+    "yaml": "^2.9.1"
   }
 }

@@ -188,7 +188,7 @@
         3,
         4
       ],
-      "label": "₹1,000 off Stay & Surf for Monday–Thursday check-ins, subject to availability.",
+      "label": "{{offerAmount}} off Stay & Surf for Monday–Thursday check-ins, subject to availability.",
       "terms": "Not valid for Surf Only. Cannot be combined with other offers. Ask the team to confirm eligibility and the discount basis.",
       "basis": null,
       "expiry": null
@@ -216,7 +216,7 @@
       }
     ],
     "note": "These are suggested ways to choose a course, not promised outcomes. Everyone learns at their own pace; conditions shape each session.",
-    "longer": "Just one day? Surf Only starts at ₹2,000. Want more time? Both formats offer 7- and 10-day courses.",
+    "longer": "Just one day? Surf Only starts at {{surfOneDayRate}}. Want more time? Both formats offer 7- and 10-day courses.",
     "instructors": {
       "heading": "Good coaching starts with a conversation.",
       "description": "Instructor guidance is part of every group course. Tell the team about your experience and water confidence so they can discuss the right start for you.",
@@ -384,15 +384,15 @@
     },
     {
       "question": "Are meals included?",
-      "answer": "No. Optional daily meals are Veg ₹300/day or Non-Veg ₹400/day. Confirm the number of meals, how many days you need and dietary options with the team. Stay & Surf includes open kitchen access."
+      "answer": "No. Optional daily meals are Veg {{vegMealRate}}/day or Non-Veg {{nonVegMealRate}}/day. Confirm the number of meals, how many days you need and dietary options with the team. Stay & Surf includes open kitchen access."
     },
     {
       "question": "How do payments and refunds work?",
-      "answer": "Surf Only: full payment confirms your booking, with no refund after booking. Stay & Surf: ₹2,000 advance per person confirms your booking, with the remaining payment at check-in; the advance is non-refundable. Confirm the final total and availability directly with the team. This website does not take payments or reserve beds."
+      "answer": "Surf Only: {{surfOnlyPayment}} Stay & Surf: {{staySurfPayment}} Confirm the final total and availability directly with the team. This website does not take payments or reserve beds."
     },
     {
       "question": "How does the weekday offer work?",
-      "answer": "Surf Into Savings is ₹1,000 off Stay & Surf for Monday–Thursday check-ins, subject to availability. It does not apply to Surf Only and cannot be combined with other offers. The team must confirm eligibility and whether the discount is per person or per booking."
+      "answer": "{{offerLabel}} {{offerTerms}} The team must confirm eligibility and whether the discount is per person or per booking."
     },
     {
       "question": "Is the hostel on the surf beach?",

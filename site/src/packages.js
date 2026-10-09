@@ -123,7 +123,7 @@ export function composeEnquiry(content, state) {
       "Please confirm my final total, room/tent allocation, bathrooms, surf beach, lesson timing and transfers.",
     );
     lines.push(
-      "Please check whether Surf Into Savings applies (Monday–Thursday check-ins, subject to availability; cannot combine offers). Please confirm the discount basis.",
+      `Please check whether ${content.packages.offer.title} applies. ${content.packages.offer.terms} Please confirm the discount basis.`,
     );
   } else
     lines.push(

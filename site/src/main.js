@@ -2,7 +2,9 @@ import "./style.css";
 import { initMotion } from "./motion.js";
 import { initPlanning } from "./planning.js";
 import "./experience.css";
-import content from "./content.json";
+import content from "./content.js";
+import { galleryImage } from "./media.js";
+import { escapeHTML } from "./content-copy.js";
 import { renderSections, renderGallery } from "./sections.js";
 import {
   money,
@@ -107,7 +109,7 @@ function updateSummary() {
     );
   $("#booking-facts").textContent = facts.join("\n");
   $("#package-inclusions").innerHTML = sel.inclusions
-    .map((x) => `<li>${x}</li>`)
+    .map((x) => `<li>${escapeHTML(x)}</li>`)
     .join("");
   $("#package-exclusions").textContent =
     sel.exclusions.join(" ") +
@@ -249,7 +251,7 @@ let galleryImages = renderGallery(),
   currentPhoto = 0;
 function displayPhoto() {
   const g = galleryImages[currentPhoto];
-  $("#gallery-large").src = "/media/" + g.file;
+  $("#gallery-large").src = galleryImage(g);
   $("#gallery-large").alt = g.alt;
   $("#gallery-dialog-title").textContent = g.title;
   $("#gallery-counter").textContent =

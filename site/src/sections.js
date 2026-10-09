@@ -1,4 +1,7 @@
-import c from "./content.json";
+import content from "./content.js";
+import { escapeContent } from "./content-copy.js";
+import { galleryImage } from "./media.js";
+const c = escapeContent(content);
 import { money } from "./packages.js";
 const img = (file, alt, cls = "", width = 780, height = 1040) =>
   `<img class="${cls}" src="/media/${file}" alt="${alt}" width="${width}" height="${height}" loading="lazy" decoding="async">`;
@@ -28,7 +31,7 @@ export function renderSections() {
         <label class="questions-label">Anything you'd like to ask? <span>(optional)</span><textarea name="notes" id="notes" maxlength="600" rows="2" placeholder="Your experience, room preferences, arrival plans…" aria-describedby="notes-error"></textarea><span class="field-error" id="notes-error"></span></label>
         <details class="all-rates"><summary>See all rates & compare options</summary><div class="rates-scroll"><table><caption>Stay & Surf · listed package rates · confirm price basis</caption><thead><tr><th scope="col">Duration</th>${c.packages.staySurf.accommodation.map((x) => `<th scope="col">${x.label}</th>`).join("")}</tr></thead><tbody>${c.packages.staySurf.courses.map((x) => `<tr><th scope="row">${x.days} days / ${x.nights} nights</th>${c.packages.staySurf.accommodation.map((a) => `<td>${money(x.rates[a.id])}</td>`).join("")}</tr>`).join("")}</tbody></table><table><caption>Surf Only · per person · one session per listed course day</caption><thead><tr><th scope="col">Course</th><th scope="col">Sessions</th><th scope="col">Rate</th></tr></thead><tbody>${c.packages.surfOnly.courses.map((x) => `<tr><th scope="row">${x.days} ${x.days === 1 ? "day" : "days"}</th><td>${x.sessions}</td><td>${money(x.rate)}</td></tr>`).join("")}</tbody></table><p>Private 1:1: ${money(c.packages.surfOnly.private.rate)} ${c.packages.surfOnly.private.basis}.</p></div></details>
       </div></div>
-      <aside class="package-ticket" aria-labelledby="summary-title"><p class="eyebrow">YOUR LITTLE GETAWAY</p><h3 id="summary-title">STAY & SURF</h3><p id="summary-detail"></p><p class="package-price" id="package-price"></p><p class="rate-basis" id="rate-basis"></p><p class="booking-facts" id="booking-facts" aria-live="polite"></p><div class="ticket-rule"></div><h4>What comes with it</h4><ul id="package-inclusions" class="check-list"></ul><p class="package-exclusions" id="package-exclusions"></p><p id="selected-meals" class="meal-summary"></p><div id="weekday-offer" class="weekday-offer"><p class="eyebrow">SURF INTO SAVINGS</p><p>${c.packages.offer.label}</p><small>${c.packages.offer.terms}</small></div><p class="payment-terms" id="payment-terms"></p><p class="weather-note">${c.packages.weather}</p><button class="button" type="submit">Review WhatsApp enquiry</button><p class="confirm-note">Confirm total and availability on WhatsApp.<br>This is an enquiry, not a reservation.</p></aside>
+      <aside class="package-ticket" aria-labelledby="summary-title"><p class="eyebrow">YOUR LITTLE GETAWAY</p><h3 id="summary-title">STAY & SURF</h3><p id="summary-detail"></p><p class="package-price" id="package-price"></p><p class="rate-basis" id="rate-basis"></p><p class="booking-facts" id="booking-facts" aria-live="polite"></p><div class="ticket-rule"></div><h4>What comes with it</h4><ul id="package-inclusions" class="check-list"></ul><p class="package-exclusions" id="package-exclusions"></p><p id="selected-meals" class="meal-summary"></p><div id="weekday-offer" class="weekday-offer"><p class="eyebrow">${c.packages.offer.title}</p><p>${c.packages.offer.label}</p><small>${c.packages.offer.terms}</small></div><p class="payment-terms" id="payment-terms"></p><p class="weather-note">${c.packages.weather}</p><button class="button" type="submit">Review WhatsApp enquiry</button><p class="confirm-note">Confirm total and availability on WhatsApp.<br>This is an enquiry, not a reservation.</p></aside>
     </div></form>
   </section>
   <section id="life" class="life section" aria-labelledby="life-title"><div class="section-top"><div><p class="eyebrow">04 / BETWEEN THE WAVES</p><h2 id="life-title">SALT IN YOUR HAIR.<br>TIME ON YOUR SIDE.</h2></div><p class="section-intro">Surfing is the reason you come.<br>The in-between is why you stay.</p></div>
@@ -50,9 +53,9 @@ export function renderSections() {
   const ld = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    name: c.brand.name,
-    description: c.brand.description,
-    telephone: c.contacts.phones.map((p) => p.e164),
+    name: content.brand.name,
+    description: content.brand.description,
+    telephone: content.contacts.phones.map((p) => p.e164),
     address: {
       "@type": "PostalAddress",
       streetAddress: "Door No. 20-63, Chitrapu Village",
@@ -61,8 +64,8 @@ export function renderSections() {
       postalCode: "574154",
       addressCountry: "IN",
     },
-    hasMap: c.contacts.map,
-    sameAs: [c.contacts.instagram],
+    hasMap: content.contacts.map,
+    sameAs: [content.contacts.instagram],
   };
   const schema = document.createElement("script");
   schema.type = "application/ld+json";
@@ -77,7 +80,7 @@ export function renderGallery(category = "all") {
   document.querySelector("#gallery-grid").innerHTML = images
     .map(
       (g, i) =>
-        `<button class="gallery-item gallery-${g.id}" data-photo="${g.id}" aria-label="View photograph: ${g.title}"><img src="/media/${g.thumb}" alt="${g.alt}" width="780" height="1040" loading="lazy" decoding="async"><span class="gallery-caption">${g.title}<span aria-hidden="true">+</span></span></button>`,
+        `<button class="gallery-item gallery-${g.id}" data-photo="${g.id}" aria-label="View photograph: ${g.title}"><img src="${galleryImage(content.gallery.find(photo => photo.id === g.id), true)}" alt="${g.alt}" width="780" height="1040" loading="lazy" decoding="async"><span class="gallery-caption">${g.title}<span aria-hidden="true">+</span></span></button>`,
     )
     .join("");
   document.querySelector("#gallery-status").textContent =

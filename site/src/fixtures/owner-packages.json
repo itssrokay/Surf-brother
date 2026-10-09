@@ -1,0 +1,167 @@
+{
+  "surfOnly": {
+    "label": "Surf Only",
+    "priceBasis": "per person",
+    "sessionHours": 2,
+    "courses": [
+      {
+        "days": 1,
+        "sessions": 1,
+        "rate": 2000
+      },
+      {
+        "days": 3,
+        "sessions": 3,
+        "rate": 6000
+      },
+      {
+        "days": 5,
+        "sessions": 5,
+        "rate": 10000
+      },
+      {
+        "days": 7,
+        "sessions": 7,
+        "rate": 13000
+      },
+      {
+        "days": 10,
+        "sessions": 10,
+        "rate": 17000
+      }
+    ],
+    "inclusions": [
+      "2-hour group surf session",
+      "Surfboard & basic surf equipment",
+      "Instructor guidance"
+    ],
+    "exclusions": [
+      "Accommodation and meals are not included.",
+      "Guests staying elsewhere arrange their own travel to the surf location."
+    ],
+    "payment": "Full payment confirms booking. No refund after booking.",
+    "private": {
+      "label": "Private 1:1 training",
+      "rate": 3000,
+      "basis": "per person per session",
+      "inclusions": [
+        "Private 1:1 surf training"
+      ],
+      "note": "Ask about session duration and equipment before booking."
+    }
+  },
+  "staySurf": {
+    "label": "Stay & Surf",
+    "priceBasis": null,
+    "accommodation": [
+      {
+        "id": "camping",
+        "label": "Camping"
+      },
+      {
+        "id": "nonAc",
+        "label": "Non-AC Hostel"
+      },
+      {
+        "id": "ac",
+        "label": "AC Hostel"
+      }
+    ],
+    "courses": [
+      {
+        "days": 3,
+        "nights": 2,
+        "rates": {
+          "camping": 8000,
+          "nonAc": 9000,
+          "ac": 10000
+        }
+      },
+      {
+        "days": 5,
+        "nights": 4,
+        "rates": {
+          "camping": 11500,
+          "nonAc": 13500,
+          "ac": 15000
+        }
+      },
+      {
+        "days": 7,
+        "nights": 6,
+        "rates": {
+          "camping": 14500,
+          "nonAc": 16500,
+          "ac": 19500
+        }
+      },
+      {
+        "days": 10,
+        "nights": 9,
+        "rates": {
+          "camping": 18000,
+          "nonAc": 21000,
+          "ac": 25000
+        }
+      }
+    ],
+    "inclusions": [
+      "Accommodation for the selected nights",
+      "Daily surf lessons with instructors",
+      "Surfboard & basic surf equipment",
+      "Small-batch learning",
+      "Ice bath recovery",
+      "Cycling & outdoor activities",
+      "Bonfire, music, karaoke & movie nights",
+      "Wi-Fi & open kitchen access"
+    ],
+    "exclusions": [
+      "Meals are optional additions, not included.",
+      "Confirm travel to the surf beach and any extra activity costs with the team."
+    ],
+    "payment": "₹2,000 advance per person confirms booking; remaining payment at check-in. The advance is non-refundable.",
+    "rateNote": "Listed package rate. Confirm whether this is per person or per booking, and confirm your total and availability with the team."
+  },
+  "meals": [
+    {
+      "id": "none",
+      "label": "No meal add-on",
+      "rate": 0
+    },
+    {
+      "id": "veg",
+      "label": "Veg",
+      "rate": 300,
+      "basis": "per day"
+    },
+    {
+      "id": "nonVeg",
+      "label": "Non-Veg",
+      "rate": 400,
+      "basis": "per day"
+    }
+  ],
+  "mealsNote": "Optional additions. Confirm meal-day count, number of meals and dietary needs with the team.",
+  "offer": {
+    "title": "Surf Into Savings",
+    "amount": 1000,
+    "checkInDays": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "label": "₹1,000 off Stay & Surf for Monday–Thursday check-ins, subject to availability.",
+    "terms": "Not valid for Surf Only. Cannot be combined with other offers. Ask the team to confirm eligibility and the discount basis.",
+    "basis": null,
+    "expiry": null
+  },
+  "weather": "All surf sessions are subject to ocean and weather conditions.",
+  "unresolvedAssumptions": [
+    "Stay & Surf price basis: per person or per booking",
+    "Discount basis: per person or per booking",
+    "Meal-day counts and number of meals",
+    "Surf beach, lesson timings and transfers",
+    "Hostel allocation, sharing setup and camping equipment"
+  ]
+}

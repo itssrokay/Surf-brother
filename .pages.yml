@@ -1,0 +1,552 @@
+# SurfBrothers owner dashboard. Multiple editors share one file: merge MUST stay enabled.
+media:
+  - name: photos
+    label: Upload stay photos
+    input: site/uploads/photos
+    output: /media/uploads
+    extensions:
+      - jpg
+      - jpeg
+      - png
+      - webp
+    rename: random
+settings:
+  content:
+    merge: true
+  commit:
+    identity: app
+    templates:
+      update: "content: update {name} via Pages CMS"
+      create: "content: add {filename} via Pages CMS"
+content:
+  - name: business
+    label: Business & contact
+    type: file
+    path: site/src/content.json
+    format: json
+    fields:
+      - name: brand
+        label: About SurfBrothers
+        type: object
+        fields:
+          - name: name
+            label: Business name
+            type: string
+            readonly: true
+            required: true
+          - name: tagline
+            label: Brand tagline
+            type: string
+            readonly: true
+            required: true
+          - name: description
+            label: About the school
+            type: text
+            required: true
+          - name: address
+            label: Stay address
+            type: string
+            required: true
+      - name: contacts
+        label: Contact links
+        type: object
+        fields:
+          - name: phones
+            label: Phone numbers
+            type: object
+            fields:
+              - name: display
+                label: Number visitors see
+                type: string
+                required: true
+                pattern:
+                  regex: ^\+[0-9 ()-]{8,24}$
+                  message: Use an international number, e.g. +91 97393 19902
+              - name: e164
+                label: Call link number
+                type: string
+                required: true
+                pattern:
+                  regex: ^\+[1-9][0-9]{7,14}$
+                  message: Use + and digits only, e.g. +919739319902
+              - name: whatsapp
+                label: WhatsApp number
+                type: string
+                required: true
+                pattern:
+                  regex: ^[1-9][0-9]{7,14}$
+                  message: Digits only including country code, e.g. 919739319902
+                description: The first number receives website enquiries.
+            list:
+              min: 2
+              max: 2
+              collapsible:
+                collapsed: true
+                summary: "{fields.display}"
+          - name: map
+            label: Directions link
+            type: string
+            required: true
+            pattern: ^https://
+          - name: instagram
+            label: Instagram link
+            type: string
+            required: true
+            pattern: ^https://
+  - name: prices
+    label: Package prices
+    type: file
+    path: site/src/content.json
+    format: json
+    fields:
+      - name: packages
+        label: Prices in INR
+        type: object
+        fields:
+          - name: surfOnly
+            label: Surf Only · per person
+            type: object
+            fields:
+              - name: courses
+                label: Group courses
+                type: object
+                fields:
+                  - name: days
+                    label: Course days
+                    type: number
+                    readonly: true
+                    required: true
+                  - name: sessions
+                    label: Sessions
+                    type: number
+                    readonly: true
+                    required: true
+                  - name: rate
+                    label: Price per person (₹)
+                    type: number
+                    required: true
+                    options:
+                      min: 0
+                      max: 1000000
+                list:
+                  min: 5
+                  max: 5
+                  collapsible:
+                    collapsed: true
+                    summary: "{fields.days} days · ₹{fields.rate}"
+              - name: private
+                label: Private 1:1
+                type: object
+                fields:
+                  - name: rate
+                    label: Price per person per session (₹)
+                    type: number
+                    required: true
+                    options:
+                      min: 0
+                      max: 1000000
+          - name: staySurf
+            label: Stay & Surf · listed rates
+            type: object
+            fields:
+              - name: courses
+                label: Stay packages
+                type: object
+                fields:
+                  - name: days
+                    label: Course days
+                    type: number
+                    readonly: true
+                    required: true
+                  - name: nights
+                    label: Included nights
+                    type: number
+                    readonly: true
+                    required: true
+                  - name: rates
+                    label: Accommodation prices
+                    type: object
+                    fields:
+                      - name: camping
+                        label: Camping (₹)
+                        type: number
+                        required: true
+                        options:
+                          min: 0
+                          max: 1000000
+                      - name: nonAc
+                        label: Non-AC Hostel (₹)
+                        type: number
+                        required: true
+                        options:
+                          min: 0
+                          max: 1000000
+                      - name: ac
+                        label: AC Hostel (₹)
+                        type: number
+                        required: true
+                        options:
+                          min: 0
+                          max: 1000000
+                list:
+                  min: 4
+                  max: 4
+                  collapsible:
+                    collapsed: true
+                    summary: "{fields.days} days / {fields.nights} nights"
+          - name: meals
+            label: Optional daily meals
+            type: object
+            fields:
+              - name: id
+                label: Meal ID
+                type: string
+                readonly: true
+                required: true
+              - name: label
+                label: Meal option
+                type: string
+                readonly: true
+                required: true
+              - name: rate
+                label: Daily price (₹)
+                type: number
+                required: true
+                options:
+                  min: 0
+                  max: 1000000
+            list:
+              min: 3
+              max: 3
+              collapsible:
+                collapsed: true
+                summary: "{fields.label} · ₹{fields.rate}"
+  - name: terms
+    label: Inclusions & booking terms
+    type: file
+    path: site/src/content.json
+    format: json
+    fields:
+      - name: packages
+        label: Package details
+        type: object
+        fields:
+          - name: surfOnly
+            label: Surf Only
+            type: object
+            fields:
+              - name: inclusions
+                label: Included
+                type: string
+                list: true
+              - name: exclusions
+                label: Not included
+                type: string
+                list: true
+              - name: payment
+                label: Payment and refund terms
+                type: text
+                required: true
+              - name: private
+                label: Private training
+                type: object
+                fields:
+                  - name: inclusions
+                    label: Included
+                    type: string
+                    list: true
+                  - name: note
+                    label: Private lesson notes
+                    type: text
+                    required: true
+          - name: staySurf
+            label: Stay & Surf
+            type: object
+            fields:
+              - name: inclusions
+                label: Included
+                type: string
+                list: true
+              - name: exclusions
+                label: Not included
+                type: string
+                list: true
+              - name: payment
+                label: Payment and refund terms
+                type: text
+                required: true
+              - name: rateNote
+                label: Price basis and availability note
+                type: text
+                required: true
+                description: Price basis is still unconfirmed. Changing the calculation rules requires a developer.
+          - name: mealsNote
+            label: Meal details
+            type: text
+            required: true
+          - name: offer
+            label: Weekday offer
+            type: object
+            fields:
+              - name: title
+                label: Offer name
+                type: string
+                required: true
+              - name: amount
+                label: Discount amount (₹)
+                type: number
+                required: true
+                options:
+                  min: 0
+                  max: 1000000
+              - name: label
+                label: Offer description
+                type: text
+                required: true
+                description: Keep {{offerAmount}} so changing the amount updates this text automatically. Eligible
+                  days remain Monday–Thursday.
+              - name: terms
+                label: Offer terms
+                type: text
+                required: true
+          - name: weather
+            label: Ocean and weather condition note
+            type: text
+            required: true
+  - name: stay
+    label: Stay & photo gallery
+    type: file
+    path: site/src/content.json
+    format: json
+    fields:
+      - name: stay
+        label: The stay
+        type: object
+        fields:
+          - name: description
+            label: Stay description
+            type: text
+            required: true
+          - name: photoNote
+            label: Room allocation note
+            type: text
+            required: true
+          - name: bathroomNote
+            label: Bathroom details
+            type: text
+            required: true
+      - name: gallery
+        label: Stay photographs
+        type: object
+        fields:
+          - name: id
+            label: Photo ID
+            type: string
+            required: true
+            pattern:
+              regex: ^[a-z0-9-]+$
+              message: A unique short ID using lowercase letters, numbers and hyphens
+            description: Keep existing IDs. For a new photo use a unique name, e.g. garden-morning.
+          - name: title
+            label: Caption
+            type: string
+            required: true
+          - name: alt
+            label: Describe what the photo shows
+            type: text
+            required: true
+            description: For visitors using a screen reader.
+          - name: category
+            label: Gallery category
+            type: select
+            required: true
+            options:
+              values:
+                - name: rooms
+                  label: Rooms
+                - name: camping
+                  label: Camping
+                - name: spaces
+                  label: Shared spaces
+          - name: file
+            label: Main photograph
+            type: image
+            required: true
+            options:
+              media: photos
+          - name: thumb
+            label: Existing thumbnail
+            type: string
+            readonly: true
+            hidden: true
+          - name: original
+            label: Photo source / credit
+            type: string
+            description: Owner-provided filename or source. Upload only images you have permission to use.
+        list:
+          min: 1
+          max: 24
+          collapsible:
+            collapsed: true
+            summary: "{fields.title}"
+  - name: faqs
+    label: Frequently asked questions
+    type: file
+    path: site/src/content.json
+    format: json
+    fields:
+      - name: faqs
+        label: Questions & answers
+        type: object
+        fields:
+          - name: question
+            label: Question
+            type: string
+            required: true
+          - name: answer
+            label: Answer
+            type: text
+            required: true
+            description: Price markers such as {{vegMealRate}}, {{nonVegMealRate}}, {{surfOnlyPayment}},
+              {{staySurfPayment}}, {{offerLabel}} and {{offerTerms}} fill from the package settings.
+              Keep them where used.
+        list:
+          min: 1
+          max: 30
+          collapsible:
+            collapsed: true
+            summary: "{fields.question}"
+  - name: trip
+    label: Life & getting here
+    type: file
+    path: site/src/content.json
+    format: json
+    fields:
+      - name: learning
+        label: Course advice
+        type: object
+        fields:
+          - name: compare
+            label: 3- and 5-day advice
+            type: object
+            fields:
+              - name: days
+                label: Course days
+                type: number
+                readonly: true
+                required: true
+              - name: title
+                label: Heading
+                type: string
+                required: true
+              - name: description
+                label: Advice
+                type: text
+                required: true
+            list:
+              min: 2
+              max: 2
+              collapsible:
+                collapsed: true
+                summary: "{fields.days}-day course"
+          - name: note
+            label: Learning expectations
+            type: text
+            required: true
+          - name: longer
+            label: Other course options
+            type: text
+            required: true
+            description: Keep {{surfOneDayRate}} to display the current 1-day price.
+          - name: instructors
+            label: Coaching
+            type: object
+            fields:
+              - name: description
+                label: Coaching description
+                type: text
+                required: true
+              - name: confirmation
+                label: What to ask before booking
+                type: text
+                required: true
+      - name: life
+        label: Between the waves
+        type: object
+        fields:
+          - name: routine
+            label: Sample day
+            type: object
+            fields:
+              - name: label
+                label: Short label
+                type: string
+                required: true
+              - name: title
+                label: Heading
+                type: string
+                required: true
+              - name: description
+                label: Description
+                type: text
+                required: true
+            list:
+              min: 4
+              max: 4
+              collapsible:
+                collapsed: true
+                summary: "{fields.title}"
+          - name: routineNote
+            label: Sample day disclaimer
+            type: text
+            required: true
+          - name: included
+            label: Included activities
+            type: text
+            required: true
+          - name: occasional
+            label: Occasional activities
+            type: text
+            required: true
+          - name: optional
+            label: Paid extras
+            type: text
+            required: true
+          - name: independent
+            label: Independent outings
+            type: text
+            required: true
+      - name: arrival
+        label: Getting here
+        type: object
+        fields:
+          - name: description
+            label: Location and transfer information
+            type: text
+            required: true
+          - name: routes
+            label: Travel options
+            type: object
+            fields:
+              - name: title
+                label: Heading
+                type: string
+                required: true
+              - name: description
+                label: Directions
+                type: text
+                required: true
+            list:
+              min: 1
+              max: 6
+              collapsible:
+                collapsed: true
+                summary: "{fields.title}"
+          - name: bring
+            label: Packing list
+            type: string
+            list: true
+          - name: bringNote
+            label: Packing and equipment note
+            type: text
+            required: true

@@ -29,6 +29,8 @@ After building, run `python3 ../scripts/package_drop.py` from `site/` (or `pytho
 
 ## Editing the business content
 
+The **Pages CMS owner dashboard** is configured in the repository-root `.pages.yml`. Open https://app.pagescms.org/itssrokay/surf-brother/main for six editors covering contacts, prices, terms, stay/photos, FAQs and trip information. See `docs/cms-guide.md` for Vercel connection settings, owner invitations and image uploads. CMS saves create GitHub commits; a connected Vercel project rebuilds from them. New gallery photos are resized/compressed during the build. The public design and animation remain code-managed.
+
 The header includes **Inquire** (a prefilled WhatsApp link), **Book now** (the package chooser), and a direct **Sun / Surf** switch with a brief wave transition. Initial appearance follows the device until a visitor chooses a mode; that choice is saved locally. Reduced motion skips the transition. The header supplies the persistent booking action without a floating button covering mobile controls.
 
 The page now progresses through introduction → packages → cinematic surf story → stay → daily life → people → seasonal planning → arrival → FAQs. Three-versus-five-day advice lives beside the package chooser in an optional comparison. All-rate tables start collapsed, while the selected rate, inclusions and payment terms remain visible. Header navigation names the main visitor tasks.
@@ -37,7 +39,7 @@ The page now progresses through introduction → packages → cinematic surf sto
 
 **`site/src/content.json` is the single editable business-content source.** It contains contacts, rates, accommodation choices, inclusions/exclusions, optional meals, offer terms, payment terms, FAQs, coach confirmation text, gallery entries, guest stories, location and unresolved calculation assumptions.
 
-- Edit `packages.surfOnly.courses` for tuition-only rates and session counts.
+- Edit `packages.surfOnly.courses` for tuition-only rates. The CMS protects course lengths and session counts.
 - Edit `packages.staySurf.courses` for the twelve camping/Non-AC/AC rates and exact nights.
 - Leave `packages.staySurf.priceBasis` and `packages.offer.basis` as `null` until the owners establish them. **The current enquiry flow deliberately does not calculate a Stay & Surf group total or a guaranteed discounted total.** A future confirmed price basis needs a corresponding update in `packages.js` and its tests; filling a JSON field alone must not silently change the calculation rules.
 - Update meal/offer/payment entries and related FAQ text together when owners change policies. Prices in the selector and summary come from the structured rates; policy prose is also in this same file.
@@ -47,7 +49,7 @@ The page now progresses through introduction → packages → cinematic surf sto
 - Editorial layouts live in `sections.js`, enquiry state and UI behavior in `main.js`, and pure date/rate/message logic in `packages.js`.
 - `style.css` holds the palette, typography, responsive layouts and reduced-motion rules. All fonts are local with their SIL Open Font Licenses.
 
-After edits, run `npm test` and `npm run build`, then reload the production preview. The package matrix tests intentionally catch accidental price changes; revise their owner-approved expectations when pricing changes.
+After local edits, run `npm test` and `npm run build`, then reload the production preview. Package logic tests use the original owner rates as a fixed test fixture, while CMS validation permits owner price updates and protects course structure. Live prices always come from `content.json`. Supported markers in FAQ, offer and course copy keep those references synchronized with price/term changes.
 
 ## Media and Blender
 

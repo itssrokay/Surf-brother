@@ -18,3 +18,6 @@ deliverables/
 .env.*
 !.env.example
 .vercel/
+
+# Generated from CMS uploads during Vite development/build.
+site/public/media/cms-generated/

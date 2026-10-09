@@ -7,7 +7,8 @@ import {
   composeEnquiry,
   addDays,
 } from "./packages.js";
-const c = JSON.parse(readFileSync(new URL("./content.json", import.meta.url)));
+// Keep the owner's original rates as a stable example; CMS prices may change.
+const c = { packages: JSON.parse(readFileSync(new URL("./fixtures/owner-packages.json", import.meta.url))) };
 const base = {
   mode: "staySurf",
   days: 3,
