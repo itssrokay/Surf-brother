@@ -1,0 +1,466 @@
+{
+  "checked": "2026-10-08",
+  "sourceFolder": "https://drive.google.com/drive/folders/1RAfh0OY4DOHOkOqpSFSJlpPXYV8ZsZ8j?usp=sharing",
+  "folderTitle": "Surfbrothers_Stay",
+  "downloadMethod": "Google Drive folder menu > Download in Codex in-app browser; ZIP extracted locally. Shared files were not changed.",
+  "assets": [
+    {
+      "filename": "DJI_20250102001306_0235_D.MP4",
+      "originalPath": "assets/originals/Surfbrothers_Stay/DJI_20250102001306_0235_D.MP4",
+      "sourceFolder": "https://drive.google.com/drive/folders/1RAfh0OY4DOHOkOqpSFSJlpPXYV8ZsZ8j?usp=sharing",
+      "creator": "SurfBrothers owner-supplied; photographer attribution to confirm",
+      "rights": "Owner supplied via user and authorised for this private proposal. Public reuse and guest permissions to confirm.",
+      "inspected": true,
+      "inspectionMethod": "Contact sheets; video sampled at 12%, 45%, 78%",
+      "selected": false,
+      "use": "Inspected, retained as original, not shipped",
+      "originalBytes": 155648382,
+      "sha256": "c4b0bb252ba662d6aee10ac3e6122befd56b527d3611c4b7b7ec36edb353d343",
+      "exports": []
+    },
+    {
+      "filename": "DJI_20250102001341_0236_D.JPG",
+      "originalPath": "assets/originals/Surfbrothers_Stay/DJI_20250102001341_0236_D.JPG",
+      "sourceFolder": "https://drive.google.com/drive/folders/1RAfh0OY4DOHOkOqpSFSJlpPXYV8ZsZ8j?usp=sharing",
+      "creator": "SurfBrothers owner-supplied; photographer attribution to confirm",
+      "rights": "Owner supplied via user and authorised for this private proposal. Public reuse and guest permissions to confirm.",
+      "inspected": true,
+      "inspectionMethod": "Contact sheets; video sampled at 12%, 45%, 78%",
+      "selected": true,
+      "use": "Our little corner of Mulki",
+      "originalBytes": 14204928,
+      "sha256": "082eb592b4195649e2bac3f8f326859701fdd587457fd8587aa89c50ed0f4c28",
+      "exports": [
+        {
+          "path": "site/public/media/hero.webp",
+          "bytes": 358884
+        },
+        {
+          "path": "site/public/media/dji_20250102001341_0236_d-small.webp",
+          "bytes": 125238
+        }
+      ]
+    },
+    {
+      "filename": "IMG_8224.HEIC",
+      "originalPath": "assets/originals/Surfbrothers_Stay/IMG_8224.HEIC",
+      "sourceFolder": "https://drive.google.com/drive/folders/1RAfh0OY4DOHOkOqpSFSJlpPXYV8ZsZ8j?usp=sharing",
+      "creator": "SurfBrothers owner-supplied; photographer attribution to confirm",
+      "rights": "Owner supplied via user and authorised for this private proposal. Public reuse and guest permissions to confirm.",
+      "inspected": true,
+      "inspectionMethod": "Contact sheets; video sampled at 12%, 45%, 78%",
+      "selected": false,
+      "use": "Inspected, retained as original, not shipped",
+      "originalBytes": 4029419,
+      "sha256": "0c7739c165fec3b9e23ec07a53a9b94cfe168d882794e4463cd0fd2a18147096",
+      "exports": []
+    },
+    {
+      "filename": "IMG_8225.HEIC",
+      "originalPath": "assets/originals/Surfbrothers_Stay/IMG_8225.HEIC",
+      "sourceFolder": "https://drive.google.com/drive/folders/1RAfh0OY4DOHOkOqpSFSJlpPXYV8ZsZ8j?usp=sharing",
+      "creator": "SurfBrothers owner-supplied; photographer attribution to confirm",
+      "rights": "Owner supplied via user and authorised for this private proposal. Public reuse and guest permissions to confirm.",
+      "inspected": true,
+      "inspectionMethod": "Contact sheets; video sampled at 12%, 45%, 78%",
+      "selected": true,
+      "use": "A slower place to wake up",
+      "originalBytes": 5358935,
+      "sha256": "c1c5450fb87be4cdf16df6514152ef49e509351edb3a4789f5e0a030e9272764",
+      "exports": [
+        {
+          "path": "site/public/media/img_8225.webp",
+          "bytes": 272744
+        },
+        {
+          "path": "site/public/media/img_8225-small.webp",
+          "bytes": 86994
+        }
+      ]
+    },
+    {
+      "filename": "IMG_8226.HEIC",
+      "originalPath": "assets/originals/Surfbrothers_Stay/IMG_8226.HEIC",
+      "sourceFolder": "https://drive.google.com/drive/folders/1RAfh0OY4DOHOkOqpSFSJlpPXYV8ZsZ8j?usp=sharing",
+      "creator": "SurfBrothers owner-supplied; photographer attribution to confirm",
+      "rights": "Owner supplied via user and authorised for this private proposal. Public reuse and guest permissions to confirm.",
+      "inspected": true,
+      "inspectionMethod": "Contact sheets; video sampled at 12%, 45%, 78%",
+      "selected": false,
+      "use": "Inspected, retained as original, not shipped",
+      "originalBytes": 5649877,
+      "sha256": "03afcd084b387ac8ef40cb93aff15c2a7bdd853f38ff415c01e6e7344e619c4a",
+      "exports": []
+    },
+    {
+      "filename": "IMG_8229.HEIC",
+      "originalPath": "assets/originals/Surfbrothers_Stay/IMG_8229.HEIC",
+      "sourceFolder": "https://drive.google.com/drive/folders/1RAfh0OY4DOHOkOqpSFSJlpPXYV8ZsZ8j?usp=sharing",
+      "creator": "SurfBrothers owner-supplied; photographer attribution to confirm",
+      "rights": "Owner supplied via user and authorised for this private proposal. Public reuse and guest permissions to confirm.",
+      "inspected": true,
+      "inspectionMethod": "Contact sheets; video sampled at 12%, 45%, 78%",
+      "selected": true,
+      "use": "A movie night, caught on camera",
+      "originalBytes": 2487667,
+      "sha256": "d656d3b050c3f32be9998ed15145bbbbebb87a3d18966006b211d46b80fd3ec1",
+      "exports": [
+        {
+          "path": "site/public/media/img_8229.webp",
+          "bytes": 217122
+        },
+        {
+          "path": "site/public/media/img_8229-small.webp",
+          "bytes": 69756
+        }
+      ]
+    },
+    {
+      "filename": "IMG_8266.MOV",
+      "originalPath": "assets/originals/Surfbrothers_Stay/IMG_8266.MOV",
+      "sourceFolder": "https://drive.google.com/drive/folders/1RAfh0OY4DOHOkOqpSFSJlpPXYV8ZsZ8j?usp=sharing",
+      "creator": "SurfBrothers owner-supplied; photographer attribution to confirm",
+      "rights": "Owner supplied via user and authorised for this private proposal. Public reuse and guest permissions to confirm.",
+      "inspected": true,
+      "inspectionMethod": "Contact sheets; video sampled at 12%, 45%, 78%",
+      "selected": false,
+      "use": "Inspected, retained as original, not shipped",
+      "originalBytes": 18173276,
+      "sha256": "d41edb44c95ca7c6e31c378fdd33eaf2d80155611360ea81b0807d867592863f",
+      "exports": []
+    },
+    {
+      "filename": "IMG_8271.MOV",
+      "originalPath": "assets/originals/Surfbrothers_Stay/IMG_8271.MOV",
+      "sourceFolder": "https://drive.google.com/drive/folders/1RAfh0OY4DOHOkOqpSFSJlpPXYV8ZsZ8j?usp=sharing",
+      "creator": "SurfBrothers owner-supplied; photographer attribution to confirm",
+      "rights": "Owner supplied via user and authorised for this private proposal. Public reuse and guest permissions to confirm.",
+      "inspected": true,
+      "inspectionMethod": "Contact sheets; video sampled at 12%, 45%, 78%",
+      "selected": true,
+      "use": "Silent evening clip",
+      "originalBytes": 22455400,
+      "sha256": "b3eb454e23043e9bb47cbf36510f54e370ae51df07133743f141fd60057775d2",
+      "exports": [
+        {
+          "path": "site/public/media/house-evening.mp4",
+          "bytes": 3292341
+        }
+      ]
+    },
+    {
+      "filename": "IMG_8272.HEIC",
+      "originalPath": "assets/originals/Surfbrothers_Stay/IMG_8272.HEIC",
+      "sourceFolder": "https://drive.google.com/drive/folders/1RAfh0OY4DOHOkOqpSFSJlpPXYV8ZsZ8j?usp=sharing",
+      "creator": "SurfBrothers owner-supplied; photographer attribution to confirm",
+      "rights": "Owner supplied via user and authorised for this private proposal. Public reuse and guest permissions to confirm.",
+      "inspected": true,
+      "inspectionMethod": "Contact sheets; video sampled at 12%, 45%, 78%",
+      "selected": true,
+      "use": "The house after sunset",
+      "originalBytes": 2819596,
+      "sha256": "7800dbca846733782f7d77b105fa049ded4e6d4af96677f9d90965131396aa98",
+      "exports": [
+        {
+          "path": "site/public/media/img_8272.webp",
+          "bytes": 266994
+        },
+        {
+          "path": "site/public/media/img_8272-small.webp",
+          "bytes": 89124
+        }
+      ]
+    },
+    {
+      "filename": "IMG_8275.HEIC",
+      "originalPath": "assets/originals/Surfbrothers_Stay/IMG_8275.HEIC",
+      "sourceFolder": "https://drive.google.com/drive/folders/1RAfh0OY4DOHOkOqpSFSJlpPXYV8ZsZ8j?usp=sharing",
+      "creator": "SurfBrothers owner-supplied; photographer attribution to confirm",
+      "rights": "Owner supplied via user and authorised for this private proposal. Public reuse and guest permissions to confirm.",
+      "inspected": true,
+      "inspectionMethod": "Contact sheets; video sampled at 12%, 45%, 78%",
+      "selected": false,
+      "use": "Inspected, retained as original, not shipped",
+      "originalBytes": 1713040,
+      "sha256": "4f0d8920272c1c4226eb0b7e4e633622c22abefa0681398f319ba65ae811fa06",
+      "exports": []
+    },
+    {
+      "filename": "PHOTO-2026-02-13-20-40-29(1).jpg",
+      "originalPath": "assets/originals/Surfbrothers_Stay/PHOTO-2026-02-13-20-40-29(1).jpg",
+      "sourceFolder": "https://drive.google.com/drive/folders/1RAfh0OY4DOHOkOqpSFSJlpPXYV8ZsZ8j?usp=sharing",
+      "creator": "SurfBrothers owner-supplied; photographer attribution to confirm",
+      "rights": "Owner supplied via user and authorised for this private proposal. Public reuse and guest permissions to confirm.",
+      "inspected": true,
+      "inspectionMethod": "Contact sheets; video sampled at 12%, 45%, 78%",
+      "selected": false,
+      "use": "Inspected, retained as original, not shipped",
+      "originalBytes": 536773,
+      "sha256": "d49f34454fe17a6bc14388a718be4c09ad5ca4bbce1fc8bf69787c97d1f11fe3",
+      "exports": []
+    },
+    {
+      "filename": "PHOTO-2026-02-13-20-40-29(10).jpg",
+      "originalPath": "assets/originals/Surfbrothers_Stay/PHOTO-2026-02-13-20-40-29(10).jpg",
+      "sourceFolder": "https://drive.google.com/drive/folders/1RAfh0OY4DOHOkOqpSFSJlpPXYV8ZsZ8j?usp=sharing",
+      "creator": "SurfBrothers owner-supplied; photographer attribution to confirm",
+      "rights": "Owner supplied via user and authorised for this private proposal. Public reuse and guest permissions to confirm.",
+      "inspected": true,
+      "inspectionMethod": "Contact sheets; video sampled at 12%, 45%, 78%",
+      "selected": false,
+      "use": "Inspected, retained as original, not shipped",
+      "originalBytes": 111744,
+      "sha256": "c2cd97ee0509cc64af60099c2bf81bc14abca561078821193e49097513dfbffa",
+      "exports": []
+    },
+    {
+      "filename": "PHOTO-2026-02-13-20-40-29(11).jpg",
+      "originalPath": "assets/originals/Surfbrothers_Stay/PHOTO-2026-02-13-20-40-29(11).jpg",
+      "sourceFolder": "https://drive.google.com/drive/folders/1RAfh0OY4DOHOkOqpSFSJlpPXYV8ZsZ8j?usp=sharing",
+      "creator": "SurfBrothers owner-supplied; photographer attribution to confirm",
+      "rights": "Owner supplied via user and authorised for this private proposal. Public reuse and guest permissions to confirm.",
+      "inspected": true,
+      "inspectionMethod": "Contact sheets; video sampled at 12%, 45%, 78%",
+      "selected": false,
+      "use": "Inspected, retained as original, not shipped",
+      "originalBytes": 105947,
+      "sha256": "50cb2bf39341629c4264a89d37ec2cff6d2593b4d1ed81f626076bf196e7c403",
+      "exports": []
+    },
+    {
+      "filename": "PHOTO-2026-02-13-20-40-29(2).jpg",
+      "originalPath": "assets/originals/Surfbrothers_Stay/PHOTO-2026-02-13-20-40-29(2).jpg",
+      "sourceFolder": "https://drive.google.com/drive/folders/1RAfh0OY4DOHOkOqpSFSJlpPXYV8ZsZ8j?usp=sharing",
+      "creator": "SurfBrothers owner-supplied; photographer attribution to confirm",
+      "rights": "Owner supplied via user and authorised for this private proposal. Public reuse and guest permissions to confirm.",
+      "inspected": true,
+      "inspectionMethod": "Contact sheets; video sampled at 12%, 45%, 78%",
+      "selected": false,
+      "use": "Inspected, retained as original, not shipped",
+      "originalBytes": 602093,
+      "sha256": "e61dcf03536bf980202d143c255dc38d092ac95724b015c427158d79b4e3011b",
+      "exports": []
+    },
+    {
+      "filename": "PHOTO-2026-02-13-20-40-29(3).jpg",
+      "originalPath": "assets/originals/Surfbrothers_Stay/PHOTO-2026-02-13-20-40-29(3).jpg",
+      "sourceFolder": "https://drive.google.com/drive/folders/1RAfh0OY4DOHOkOqpSFSJlpPXYV8ZsZ8j?usp=sharing",
+      "creator": "SurfBrothers owner-supplied; photographer attribution to confirm",
+      "rights": "Owner supplied via user and authorised for this private proposal. Public reuse and guest permissions to confirm.",
+      "inspected": true,
+      "inspectionMethod": "Contact sheets; video sampled at 12%, 45%, 78%",
+      "selected": false,
+      "use": "Inspected, retained as original, not shipped",
+      "originalBytes": 145079,
+      "sha256": "d5ce5261f3ffce5f1e2464ee3a92a11b0609950ce0b0b57864df2b3d49e861a6",
+      "exports": []
+    },
+    {
+      "filename": "PHOTO-2026-02-13-20-40-29(4).jpg",
+      "originalPath": "assets/originals/Surfbrothers_Stay/PHOTO-2026-02-13-20-40-29(4).jpg",
+      "sourceFolder": "https://drive.google.com/drive/folders/1RAfh0OY4DOHOkOqpSFSJlpPXYV8ZsZ8j?usp=sharing",
+      "creator": "SurfBrothers owner-supplied; photographer attribution to confirm",
+      "rights": "Owner supplied via user and authorised for this private proposal. Public reuse and guest permissions to confirm.",
+      "inspected": true,
+      "inspectionMethod": "Contact sheets; video sampled at 12%, 45%, 78%",
+      "selected": true,
+      "use": "Camping under the palms",
+      "originalBytes": 596000,
+      "sha256": "087f195ec1a09ddbd0cbfa9c5f00ae68bb6ebc0ad88ab7c0a9a2130910f14a95",
+      "exports": [
+        {
+          "path": "site/public/media/stay-4.webp",
+          "bytes": 370026
+        },
+        {
+          "path": "site/public/media/stay-4-small.webp",
+          "bytes": 111104
+        }
+      ]
+    },
+    {
+      "filename": "PHOTO-2026-02-13-20-40-29(5).jpg",
+      "originalPath": "assets/originals/Surfbrothers_Stay/PHOTO-2026-02-13-20-40-29(5).jpg",
+      "sourceFolder": "https://drive.google.com/drive/folders/1RAfh0OY4DOHOkOqpSFSJlpPXYV8ZsZ8j?usp=sharing",
+      "creator": "SurfBrothers owner-supplied; photographer attribution to confirm",
+      "rights": "Owner supplied via user and authorised for this private proposal. Public reuse and guest permissions to confirm.",
+      "inspected": true,
+      "inspectionMethod": "Contact sheets; video sampled at 12%, 45%, 78%",
+      "selected": false,
+      "use": "Inspected, retained as original, not shipped",
+      "originalBytes": 81898,
+      "sha256": "8b987db6596388eee7fab990798981bd8bce810e56acd39db5c607a3521252fa",
+      "exports": []
+    },
+    {
+      "filename": "PHOTO-2026-02-13-20-40-29(6).jpg",
+      "originalPath": "assets/originals/Surfbrothers_Stay/PHOTO-2026-02-13-20-40-29(6).jpg",
+      "sourceFolder": "https://drive.google.com/drive/folders/1RAfh0OY4DOHOkOqpSFSJlpPXYV8ZsZ8j?usp=sharing",
+      "creator": "SurfBrothers owner-supplied; photographer attribution to confirm",
+      "rights": "Owner supplied via user and authorised for this private proposal. Public reuse and guest permissions to confirm.",
+      "inspected": true,
+      "inspectionMethod": "Contact sheets; video sampled at 12%, 45%, 78%",
+      "selected": true,
+      "use": "Inside the hostel",
+      "originalBytes": 124289,
+      "sha256": "377886c68689dbc74bb693ed95c8a9d1ae1204bc853c012eaa9e477578f972d8",
+      "exports": [
+        {
+          "path": "site/public/media/stay-6.webp",
+          "bytes": 67960
+        },
+        {
+          "path": "site/public/media/stay-6-small.webp",
+          "bytes": 28968
+        }
+      ]
+    },
+    {
+      "filename": "PHOTO-2026-02-13-20-40-29(7).jpg",
+      "originalPath": "assets/originals/Surfbrothers_Stay/PHOTO-2026-02-13-20-40-29(7).jpg",
+      "sourceFolder": "https://drive.google.com/drive/folders/1RAfh0OY4DOHOkOqpSFSJlpPXYV8ZsZ8j?usp=sharing",
+      "creator": "SurfBrothers owner-supplied; photographer attribution to confirm",
+      "rights": "Owner supplied via user and authorised for this private proposal. Public reuse and guest permissions to confirm.",
+      "inspected": true,
+      "inspectionMethod": "Contact sheets; video sampled at 12%, 45%, 78%",
+      "selected": true,
+      "use": "Room to hang out",
+      "originalBytes": 92980,
+      "sha256": "ed6cd09339f647fbb023477a56902aa26f5b83c8b054c48d11f78c5531f4f41d",
+      "exports": [
+        {
+          "path": "site/public/media/stay-7.webp",
+          "bytes": 40984
+        },
+        {
+          "path": "site/public/media/stay-7-small.webp",
+          "bytes": 20444
+        }
+      ]
+    },
+    {
+      "filename": "PHOTO-2026-02-13-20-40-29(8).jpg",
+      "originalPath": "assets/originals/Surfbrothers_Stay/PHOTO-2026-02-13-20-40-29(8).jpg",
+      "sourceFolder": "https://drive.google.com/drive/folders/1RAfh0OY4DOHOkOqpSFSJlpPXYV8ZsZ8j?usp=sharing",
+      "creator": "SurfBrothers owner-supplied; photographer attribution to confirm",
+      "rights": "Owner supplied via user and authorised for this private proposal. Public reuse and guest permissions to confirm.",
+      "inspected": true,
+      "inspectionMethod": "Contact sheets; video sampled at 12%, 45%, 78%",
+      "selected": true,
+      "use": "A look inside the rooms",
+      "originalBytes": 109748,
+      "sha256": "e8a4713b98f60787cdb7d24fec724fe48859aa0f7cc16b3f8028d416abf88614",
+      "exports": [
+        {
+          "path": "site/public/media/stay-8.webp",
+          "bytes": 60934
+        },
+        {
+          "path": "site/public/media/stay-8-small.webp",
+          "bytes": 28190
+        }
+      ]
+    },
+    {
+      "filename": "PHOTO-2026-02-13-20-40-29(9).jpg",
+      "originalPath": "assets/originals/Surfbrothers_Stay/PHOTO-2026-02-13-20-40-29(9).jpg",
+      "sourceFolder": "https://drive.google.com/drive/folders/1RAfh0OY4DOHOkOqpSFSJlpPXYV8ZsZ8j?usp=sharing",
+      "creator": "SurfBrothers owner-supplied; photographer attribution to confirm",
+      "rights": "Owner supplied via user and authorised for this private proposal. Public reuse and guest permissions to confirm.",
+      "inspected": true,
+      "inspectionMethod": "Contact sheets; video sampled at 12%, 45%, 78%",
+      "selected": false,
+      "use": "Inspected, retained as original, not shipped",
+      "originalBytes": 84625,
+      "sha256": "0fa1bb8a5f173f88c6256cb03d1505f69492fa04e45c1a39c3723cd434582038",
+      "exports": []
+    },
+    {
+      "filename": "PHOTO-2026-02-13-20-40-29.jpg",
+      "originalPath": "assets/originals/Surfbrothers_Stay/PHOTO-2026-02-13-20-40-29.jpg",
+      "sourceFolder": "https://drive.google.com/drive/folders/1RAfh0OY4DOHOkOqpSFSJlpPXYV8ZsZ8j?usp=sharing",
+      "creator": "SurfBrothers owner-supplied; photographer attribution to confirm",
+      "rights": "Owner supplied via user and authorised for this private proposal. Public reuse and guest permissions to confirm.",
+      "inspected": true,
+      "inspectionMethod": "Contact sheets; video sampled at 12%, 45%, 78%",
+      "selected": false,
+      "use": "Inspected, retained as original, not shipped",
+      "originalBytes": 490600,
+      "sha256": "eb054afa4dec4a9558515ca0489199ff1285811cc4d7d2981de4e4151c02f9a6",
+      "exports": []
+    },
+    {
+      "filename": "surfbrothers-longboard.blend",
+      "originalPath": "assets/blender/surfbrothers-longboard.blend",
+      "generationScript": "assets/blender/create_surfboard.py",
+      "renderLog": "assets/blender/render.log",
+      "creator": "Original procedural design created in Blender for this proposal",
+      "rights": "Original asset, included in handover; no external textures or model dependencies",
+      "selected": true,
+      "use": "Original surfboard study in the surf section; conceptual brand artwork, not an equipment claim",
+      "exports": [
+        {
+          "path": "assets/blender/surfbrothers-longboard.png",
+          "bytes": 971211
+        },
+        {
+          "path": "site/public/media/surfbrothers-board.webp",
+          "bytes": 37502
+        }
+      ]
+    },
+    {
+      "filename": "surf-journey.blend",
+      "originalPath": "assets/blender/journey/surf-journey.blend",
+      "generationScript": "assets/blender/journey/create_journey.py",
+      "renderLog": "assets/blender/journey/render.log",
+      "creator": "Original procedural Blender coastal scene, adult character and animation created for this proposal",
+      "rights": "Original asset; no external textures, models or character dependencies",
+      "selected": true,
+      "use": "Scroll-controlled illustrated shore/paddle/ride journey; not the actual surf beach or a learning guarantee",
+      "detailedManifest": "docs/journey-manifest.json",
+      "exportScript": "scripts/export_journey.py",
+      "exportDirectory": "site/public/media/journey",
+      "deliveryPackScript": "scripts/pack_journey.py",
+      "delivery": "8 content-addressed 12-frame packs per responsive variant; see detailedManifest"
+    },
+    {
+      "filename": "surfboard-cursor.svg",
+      "originalPath": "site/public/surfboard-cursor.svg",
+      "creator": "Original SVG drawing created for this proposal",
+      "rights": "Original code-native vector; no external dependencies",
+      "selected": true,
+      "use": "Native desktop cursor over hero, journey and board artwork",
+      "exports": [
+        {
+          "path": "site/public/surfboard-cursor.svg",
+          "bytes": 489
+        }
+      ]
+    }
+  ],
+  "fonts": {
+    "families": [
+      "Barlow Condensed 800",
+      "DM Sans 400\u2013600"
+    ],
+    "sourceStylesheets": [
+      "assets/font-source.css",
+      "assets/woff-font-source.css"
+    ],
+    "source": "https://fonts.google.com/",
+    "license": "SIL Open Font License 1.1",
+    "licenseFiles": [
+      "site/public/fonts/barlow-OFL.txt",
+      "site/public/fonts/dm-sans-OFL.txt"
+    ],
+    "originalTTFDirectory": "assets/fonts",
+    "webDirectory": "site/public/fonts"
+  },
+  "socialPreview": {
+    "path": "site/public/social-preview.jpg",
+    "createdWith": "scripts/export_assets.py, authorised original photo plus original typography",
+    "rights": "Same private-proposal permission as the source photo; public reuse to confirm"
+  },
+  "thirdPartyMedia": "No third-party social videos or accommodation stock downloaded; social stories are linked."
+}

@@ -1,0 +1,19 @@
+{
+  "checked": "2026-10-08",
+  "method": "5 curl HTML requests to loopback production preview, unthrottled",
+  "htmlResponseTimesMs": [
+    2.13,
+    1.08,
+    1.44,
+    1.34,
+    5.18
+  ],
+  "medianHtmlResponseMs": 1.44,
+  "assetResponsesChecked": 21,
+  "assetFailures": [],
+  "jsGzipBytes": 15328,
+  "cssGzipBytes": 7623,
+  "mediaFiles": 18,
+  "mediaBytes": 5545309,
+  "compressionMethod": "Python gzip.compress default level 9; main production bundle only, diagnostic chunk excluded"
+}

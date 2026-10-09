@@ -1,0 +1,15 @@
+{
+  "name": "surfbrothers-mulki-proposal",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5173 --strictPort",
+    "build": "vite build && node ../scripts/prepare_dist.mjs",
+    "preview": "vite preview --host 127.0.0.1 --port 4173 --strictPort",
+    "test": "node --test src/packages.test.js src/frame-packs.test.js src/weather.test.js"
+  },
+  "devDependencies": {
+    "vite": "^7.1.0"
+  }
+}

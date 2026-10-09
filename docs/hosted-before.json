@@ -1,0 +1,431 @@
+{
+  "motion": {
+    "progress": 0.8998893805309734,
+    "target": 0.8998893805309734,
+    "desiredFrame": 86,
+    "displayedFrame": 86,
+    "cachedFrames": 12,
+    "cacheLimit": 12,
+    "pendingFrames": 0,
+    "failedFrames": [],
+    "active": true,
+    "reduced": false,
+    "variant": "small",
+    "frameCount": 96,
+    "renderer": "canvas-2d",
+    "chapter": 2
+  },
+  "page": {
+    "lcpMs": 244,
+    "cls": 7.899667179659469e-05,
+    "viewport": {
+      "width": 652,
+      "height": 853
+    },
+    "scrollWidth": 652,
+    "domContentLoadedMs": 284.90000000596046,
+    "transferBytes": 1259320,
+    "resourceCount": 73,
+    "resources": [
+      {
+        "name": "barlow-condensed-800.woff2",
+        "transferBytes": 15064,
+        "durationMs": 47.5
+      },
+      {
+        "name": "hero.webp",
+        "transferBytes": 359184,
+        "durationMs": 140.30000001192093
+      },
+      {
+        "name": "index-C1hU7Wrb.js",
+        "transferBytes": 20154,
+        "durationMs": 141.59999999403954
+      },
+      {
+        "name": "index-CGoN0Vir.css",
+        "transferBytes": 11150,
+        "durationMs": 65.30000001192093
+      },
+      {
+        "name": "dm-sans.woff2",
+        "transferBytes": 37280,
+        "durationMs": 79.80000001192093
+      },
+      {
+        "name": "dm-sans-ext.woff2",
+        "transferBytes": 18492,
+        "durationMs": 60.70000001788139
+      },
+      {
+        "name": "barlow-condensed-ext-800.woff2",
+        "transferBytes": 9528,
+        "durationMs": 293.40000000596046
+      },
+      {
+        "name": "sequence.json",
+        "transferBytes": 593,
+        "durationMs": 31.299999982118607
+      },
+      {
+        "name": "img_8272-small.webp",
+        "transferBytes": 89424,
+        "durationMs": 39.400000005960464
+      },
+      {
+        "name": "diagnostics-D5BFXMbd.js",
+        "transferBytes": 1356,
+        "durationMs": 265.30000001192093
+      },
+      {
+        "name": "poster.webp",
+        "transferBytes": 31734,
+        "durationMs": 33.099999994039536
+      },
+      {
+        "name": "001.webp",
+        "transferBytes": 14186,
+        "durationMs": 311.09999999403954
+      },
+      {
+        "name": "003.webp",
+        "transferBytes": 14178,
+        "durationMs": 274.60000002384186
+      },
+      {
+        "name": "002.webp",
+        "transferBytes": 14176,
+        "durationMs": 292.10000002384186
+      },
+      {
+        "name": "004.webp",
+        "transferBytes": 14092,
+        "durationMs": 289
+      },
+      {
+        "name": "005.webp",
+        "transferBytes": 14074,
+        "durationMs": 278.10000002384186
+      },
+      {
+        "name": "favicon.svg",
+        "transferBytes": 547,
+        "durationMs": 31.80000001192093
+      },
+      {
+        "name": "006.webp",
+        "transferBytes": 14120,
+        "durationMs": 283.90000000596046
+      },
+      {
+        "name": "007.webp",
+        "transferBytes": 14082,
+        "durationMs": 278.40000000596046
+      },
+      {
+        "name": "008.webp",
+        "transferBytes": 14108,
+        "durationMs": 31.400000005960464
+      },
+      {
+        "name": "009.webp",
+        "transferBytes": 14222,
+        "durationMs": 267.40000000596046
+      },
+      {
+        "name": "010.webp",
+        "transferBytes": 14358,
+        "durationMs": 36.099999994039536
+      },
+      {
+        "name": "011.webp",
+        "transferBytes": 14162,
+        "durationMs": 33.80000001192093
+      },
+      {
+        "name": "012.webp",
+        "transferBytes": 14220,
+        "durationMs": 32.599999994039536
+      },
+      {
+        "name": "013.webp",
+        "transferBytes": 14328,
+        "durationMs": 32
+      },
+      {
+        "name": "014.webp",
+        "transferBytes": 14346,
+        "durationMs": 33
+      },
+      {
+        "name": "015.webp",
+        "transferBytes": 14296,
+        "durationMs": 304.30000001192093
+      },
+      {
+        "name": "016.webp",
+        "transferBytes": 14328,
+        "durationMs": 292.40000000596046
+      },
+      {
+        "name": "017.webp",
+        "transferBytes": 14564,
+        "durationMs": 288
+      },
+      {
+        "name": "038.webp",
+        "transferBytes": 15368,
+        "durationMs": 279.40000000596046
+      },
+      {
+        "name": "039.webp",
+        "transferBytes": 15276,
+        "durationMs": 32
+      },
+      {
+        "name": "040.webp",
+        "transferBytes": 15252,
+        "durationMs": 42.89999997615814
+      },
+      {
+        "name": "041.webp",
+        "transferBytes": 15150,
+        "durationMs": 266.90000000596046
+      },
+      {
+        "name": "042.webp",
+        "transferBytes": 15236,
+        "durationMs": 33
+      },
+      {
+        "name": "043.webp",
+        "transferBytes": 15294,
+        "durationMs": 262
+      },
+      {
+        "name": "047.webp",
+        "transferBytes": 15402,
+        "durationMs": 49.599999994039536
+      },
+      {
+        "name": "048.webp",
+        "transferBytes": 15444,
+        "durationMs": 32.400000005960464
+      },
+      {
+        "name": "049.webp",
+        "transferBytes": 15562,
+        "durationMs": 316.90000000596046
+      },
+      {
+        "name": "050.webp",
+        "transferBytes": 15612,
+        "durationMs": 40.80000001192093
+      },
+      {
+        "name": "046.webp",
+        "transferBytes": 15318,
+        "durationMs": 316
+      },
+      {
+        "name": "051.webp",
+        "transferBytes": 15608,
+        "durationMs": 34.80000001192093
+      },
+      {
+        "name": "052.webp",
+        "transferBytes": 15516,
+        "durationMs": 31.099999994039536
+      },
+      {
+        "name": "053.webp",
+        "transferBytes": 15596,
+        "durationMs": 34.80000001192093
+      },
+      {
+        "name": "045.webp",
+        "transferBytes": 15396,
+        "durationMs": 36.400000005960464
+      },
+      {
+        "name": "044.webp",
+        "transferBytes": 15322,
+        "durationMs": 293.40000000596046
+      },
+      {
+        "name": "037.webp",
+        "transferBytes": 15126,
+        "durationMs": 36
+      },
+      {
+        "name": "036.webp",
+        "transferBytes": 15146,
+        "durationMs": 36.099999994039536
+      },
+      {
+        "name": "035.webp",
+        "transferBytes": 15082,
+        "durationMs": 32.70000001788139
+      },
+      {
+        "name": "034.webp",
+        "transferBytes": 15108,
+        "durationMs": 46.19999998807907
+      },
+      {
+        "name": "028.webp",
+        "transferBytes": 14956,
+        "durationMs": 32.69999998807907
+      },
+      {
+        "name": "025.webp",
+        "transferBytes": 14616,
+        "durationMs": 280.59999999403954
+      },
+      {
+        "name": "022.webp",
+        "transferBytes": 14544,
+        "durationMs": 32.80000001192093
+      },
+      {
+        "name": "018.webp",
+        "transferBytes": 14380,
+        "durationMs": 32.39999997615814
+      },
+      {
+        "name": "009.webp",
+        "transferBytes": 300,
+        "durationMs": 29.400000005960464
+      },
+      {
+        "name": "008.webp",
+        "transferBytes": 300,
+        "durationMs": 28.69999998807907
+      },
+      {
+        "name": "007.webp",
+        "transferBytes": 300,
+        "durationMs": 28.200000017881393
+      },
+      {
+        "name": "006.webp",
+        "transferBytes": 300,
+        "durationMs": 30.5
+      },
+      {
+        "name": "005.webp",
+        "transferBytes": 300,
+        "durationMs": 29.700000017881393
+      },
+      {
+        "name": "004.webp",
+        "transferBytes": 300,
+        "durationMs": 47.5
+      },
+      {
+        "name": "003.webp",
+        "transferBytes": 300,
+        "durationMs": 40.599999994039536
+      },
+      {
+        "name": "002.webp",
+        "transferBytes": 300,
+        "durationMs": 38
+      },
+      {
+        "name": "001.webp",
+        "transferBytes": 300,
+        "durationMs": 30.80000001192093
+      },
+      {
+        "name": "014.webp",
+        "transferBytes": 300,
+        "durationMs": 100.09999999403954
+      },
+      {
+        "name": "013.webp",
+        "transferBytes": 300,
+        "durationMs": 100.5
+      },
+      {
+        "name": "015.webp",
+        "transferBytes": 300,
+        "durationMs": 69.19999998807907
+      },
+      {
+        "name": "017.webp",
+        "transferBytes": 300,
+        "durationMs": 37.69999998807907
+      },
+      {
+        "name": "018.webp",
+        "transferBytes": 300,
+        "durationMs": 30
+      },
+      {
+        "name": "016.webp",
+        "transferBytes": 300,
+        "durationMs": 30.700000017881393
+      },
+      {
+        "name": "020.webp",
+        "transferBytes": 14462,
+        "durationMs": 44.099999994039536
+      },
+      {
+        "name": "022.webp",
+        "transferBytes": 300,
+        "durationMs": 62.5
+      },
+      {
+        "name": "surfbrothers-board.webp",
+        "transferBytes": 37802,
+        "durationMs": 43
+      },
+      {
+        "name": "042.webp",
+        "transferBytes": 300,
+        "durationMs": 30.400000005960464
+      },
+      {
+        "name": "053.webp",
+        "transferBytes": 300,
+        "durationMs": 33.29999998211861
+      }
+    ],
+    "canvasCount": 1,
+    "canvasRenderers": [
+      "2d"
+    ],
+    "webglCanvasCount": 0,
+    "reducedMotionRequested": false,
+    "boardAnimation": "none",
+    "focusElement": "BUTTON",
+    "focusOutline": "none",
+    "overflowElements": [
+      "ticker-track",
+      "SPAN",
+      "B",
+      "SPAN",
+      "journey-orbit",
+      {},
+      {},
+      {},
+      "closing-sun"
+    ],
+    "missingImages": []
+  },
+  "console": [],
+  "duringChapterJump": {
+    "progress": 0.5977786268043207,
+    "target": 0.6768805309734514,
+    "desiredFrame": 58,
+    "displayedFrame": 12,
+    "cachedFrames": 12,
+    "pendingFrames": 3,
+    "failedFrames": [],
+    "variant": "small",
+    "chapter": 1
+  },
+  "note": "Previous hosted build, inspected 9 October 2026. Transition state read before settling; new local loader not deployed."
+}

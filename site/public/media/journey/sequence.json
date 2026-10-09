@@ -1,0 +1,114 @@
+{
+  "frameCount": 96,
+  "width": 960,
+  "height": 960,
+  "variants": {
+    "large": 960,
+    "small": 600
+  },
+  "format": "webp",
+  "renderer": "Blender Cycles, 16 samples with denoising",
+  "concept": "Original stylised shore \u2192 paddle \u2192 ride journey. Not the actual surf beach.",
+  "packs": {
+    "large": [
+      {
+        "first": 1,
+        "last": 12,
+        "url": "packs/large/001-b5a40e59f82f.sbj",
+        "bytes": 299695
+      },
+      {
+        "first": 13,
+        "last": 24,
+        "url": "packs/large/013-b48d19106b01.sbj",
+        "bytes": 304913
+      },
+      {
+        "first": 25,
+        "last": 36,
+        "url": "packs/large/025-40b848efa067.sbj",
+        "bytes": 313539
+      },
+      {
+        "first": 37,
+        "last": 48,
+        "url": "packs/large/037-fff0bec2bb81.sbj",
+        "bytes": 321233
+      },
+      {
+        "first": 49,
+        "last": 60,
+        "url": "packs/large/049-b96dc950e745.sbj",
+        "bytes": 329307
+      },
+      {
+        "first": 61,
+        "last": 72,
+        "url": "packs/large/061-e3df96373f71.sbj",
+        "bytes": 329787
+      },
+      {
+        "first": 73,
+        "last": 84,
+        "url": "packs/large/073-06c8910d8b5f.sbj",
+        "bytes": 329813
+      },
+      {
+        "first": 85,
+        "last": 96,
+        "url": "packs/large/085-b833452da6b8.sbj",
+        "bytes": 331665
+      }
+    ],
+    "small": [
+      {
+        "first": 1,
+        "last": 12,
+        "url": "packs/small/001-1890d34e8ec4.sbj",
+        "bytes": 166894
+      },
+      {
+        "first": 13,
+        "last": 24,
+        "url": "packs/small/013-903df77d53ad.sbj",
+        "bytes": 169809
+      },
+      {
+        "first": 25,
+        "last": 36,
+        "url": "packs/small/025-b65acf26ffa2.sbj",
+        "bytes": 176346
+      },
+      {
+        "first": 37,
+        "last": 48,
+        "url": "packs/small/037-2897ed94fe93.sbj",
+        "bytes": 180510
+      },
+      {
+        "first": 49,
+        "last": 60,
+        "url": "packs/small/049-617d2755d133.sbj",
+        "bytes": 183470
+      },
+      {
+        "first": 61,
+        "last": 72,
+        "url": "packs/small/061-29df9f04b672.sbj",
+        "bytes": 182974
+      },
+      {
+        "first": 73,
+        "last": 84,
+        "url": "packs/small/073-4a6d62c7ca8f.sbj",
+        "bytes": 183356
+      },
+      {
+        "first": 85,
+        "last": 96,
+        "url": "packs/small/085-9b94ebf93684.sbj",
+        "bytes": 184552
+      }
+    ]
+  }
+}

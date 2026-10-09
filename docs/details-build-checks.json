@@ -1,0 +1,21 @@
+{
+  "checked": "2026-10-09",
+  "testsPassed": 14,
+  "productionFiles": [
+    {
+      "path": "/assets/index-B75LNHYY.js",
+      "status": 200,
+      "bytes": 61448,
+      "gzipBytes": 21855
+    },
+    {
+      "path": "/assets/index-1yidverv.css",
+      "status": 200,
+      "bytes": 50929,
+      "gzipBytes": 11475
+    }
+  ],
+  "visualPlaybackStatus": "User confirmed on 9 October 2026: after refreshing the local preview and opening Catch the feeling, the scene animates.",
+  "zipBytes": 9770069,
+  "verificationMethod": "Direct user confirmation; no automated fresh visual check, device dimensions or FPS measurement claimed."
+}

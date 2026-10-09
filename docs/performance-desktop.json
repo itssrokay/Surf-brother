@@ -1,0 +1,111 @@
+{
+  "lcpMs": 160,
+  "cls": 0.00008789582371498923,
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "scrollWidth": 1425,
+  "domContentLoadedMs": 78.7000000178814,
+  "transferBytes": 1331758,
+  "resourceCount": 18,
+  "resources": [
+    {
+      "name": "barlow-condensed-800.woff2",
+      "transferBytes": 15064,
+      "durationMs": 17.5
+    },
+    {
+      "name": "hero.webp",
+      "transferBytes": 359184,
+      "durationMs": 20
+    },
+    {
+      "name": "index-Br1pbBiy.js",
+      "transferBytes": 15639,
+      "durationMs": 16.200000017881393
+    },
+    {
+      "name": "index-CNFRZnpq.css",
+      "transferBytes": 7967,
+      "durationMs": 18.200000017881393
+    },
+    {
+      "name": "surfbrothers-board.webp",
+      "transferBytes": 37802,
+      "durationMs": 18.19999998807907
+    },
+    {
+      "name": "img_8272-small.webp",
+      "transferBytes": 89424,
+      "durationMs": 23.899999976158142
+    },
+    {
+      "name": "diagnostics-B559OOYe.js",
+      "transferBytes": 1290,
+      "durationMs": 23
+    },
+    {
+      "name": "stay-6-small.webp",
+      "transferBytes": 29268,
+      "durationMs": 33.599999994039536
+    },
+    {
+      "name": "img_8272.webp",
+      "transferBytes": 267294,
+      "durationMs": 48.599999994039536
+    },
+    {
+      "name": "dji_20250102001341_0236_d-small.webp",
+      "transferBytes": 125538,
+      "durationMs": 49
+    },
+    {
+      "name": "stay-4-small.webp",
+      "transferBytes": 111404,
+      "durationMs": 67.39999997615814
+    },
+    {
+      "name": "stay-7-small.webp",
+      "transferBytes": 20744,
+      "durationMs": 72.19999998807907
+    },
+    {
+      "name": "img_8225-small.webp",
+      "transferBytes": 87294,
+      "durationMs": 73.19999998807907
+    },
+    {
+      "name": "stay-8-small.webp",
+      "transferBytes": 28490,
+      "durationMs": 73.69999998807907
+    },
+    {
+      "name": "img_8229-small.webp",
+      "transferBytes": 70056,
+      "durationMs": 74.19999998807907
+    },
+    {
+      "name": "dm-sans.woff2",
+      "transferBytes": 37280,
+      "durationMs": 54.599999994039536
+    },
+    {
+      "name": "dm-sans-ext.woff2",
+      "transferBytes": 18492,
+      "durationMs": 48.69999998807907
+    },
+    {
+      "name": "barlow-condensed-ext-800.woff2",
+      "transferBytes": 9528,
+      "durationMs": 49.099999994039536
+    }
+  ],
+  "webglCanvasCount": 0,
+  "reducedMotionRequested": false,
+  "boardAnimation": "board-drift",
+  "focusElement": "BODY",
+  "focusOutline": "none",
+  "overflowElements": [],
+  "missingImages": []
+}

@@ -1,0 +1,8 @@
+/Users/shraj/Documents/Project Shortcuts/surf brother/assets/blender/create_surfboard.py:17: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(name); m.diffuse_color=(*color,1); m.use_nodes=True
+00:12.474  render           | Saved: '/Users/shraj/Documents/Project Shortcuts/surf brother/assets/blender/surfbrothers-longboard.png'
+Info: Saved as "surfbrothers-longboard.blend"
+ORIGINAL_ASSET_COMPLETE /Users/shraj/Documents/Project Shortcuts/surf brother/assets/blender/surfbrothers-longboard.png
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit

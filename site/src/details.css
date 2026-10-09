@@ -1,0 +1,89 @@
+.water-effects { position: fixed; inset: 0; z-index: 90; overflow: clip; pointer-events: none; contain: layout paint; }
+.water-splash {
+  position: absolute;
+  width: 0;
+  height: 0;
+  z-index: 90;
+  pointer-events: none;
+  color: #b9e9e4;
+}
+.water-ring {
+  position: absolute;
+  left: -35px;
+  top: -12px;
+  width: 70px;
+  height: 24px;
+  border: 2px solid #c9f2ed;
+  border-radius: 50%;
+  animation: water-ring .72s ease-out both;
+  box-shadow: 0 0 0 1px #073e3e38;
+}
+.water-ring.second { animation-delay: .12s; border-width: 1px; }
+.water-flight { position: absolute; inset: 0; animation: water-out .8s var(--delay) ease-out both; }
+.water-flight i {
+  display: block;
+  position: absolute;
+  width: var(--drop-size);
+  height: calc(var(--drop-size) * 1.7);
+  background: #d5f7ee;
+  border-radius: 60% 60% 50% 50%;
+  box-shadow: 0 0 0 1px #073e3e40;
+  animation: water-drop .8s var(--delay) cubic-bezier(.25,.6,.6,1) both;
+}
+.is-big .water-ring { width: 110px; height: 38px; left: -55px; top: -19px; }
+@keyframes water-ring { from { transform: scale(.25); opacity: .9; } to { transform: scale(2.15); opacity: 0; } }
+@keyframes water-out { from { transform: translateX(0); } to { transform: translateX(var(--dx)); } }
+@keyframes water-drop {
+  0% { transform: translateY(0) rotate(0); opacity: 0; }
+  12% { opacity: 1; }
+  42% { transform: translateY(var(--rise)) rotate(15deg); opacity: 1; }
+  100% { transform: translateY(var(--fall)) rotate(65deg) scale(.4); opacity: 0; }
+}
+.journey-call { display: flex; align-items: center; gap: 2px; color: #bfcec1; }
+.shell-secret {
+  width: 44px; height: 44px; flex-shrink: 0;
+  display: grid; place-items: center;
+  background: none; border: 0; padding: 10px;
+  margin-left: -12px;
+  color: var(--orange);
+}
+.shell-secret svg { width: 23px; height: 23px; }
+.motion-enabled .shell-secret svg { transition: transform .35s; }
+.motion-enabled .shell-secret:hover svg { transform: rotate(-18deg) scale(1.12); }
+.ocean-whisper {
+  position: fixed; left: 50%; bottom: 92px; transform: translateX(-50%);
+  z-index: 95; width: max-content; max-width: min(430px, calc(100vw - 40px));
+  padding: 16px 24px; border: 1px solid #fcddad80; border-radius: 4px;
+  background: #f5f0e5; color: #073e3e;
+  box-shadow: 0 8px 30px #052f3040;
+  font-size: 13px; text-align: center; line-height: 1.55;
+  pointer-events: none;
+}
+.ocean-whisper[hidden] { display: none; }
+.motion-enabled .ocean-whisper:not([hidden]) { animation: whisper-in .3s ease-out; }
+@keyframes whisper-in { from { opacity: 0; translate: 0 8px; } to { opacity: 1; translate: 0 0; } }
+.motion-enabled .photo-stamp:hover { transform: rotate(-6deg) scale(1.05); }
+.photo-stamp { transition: transform .4s; }
+.motion-enabled.secret-sun .sun { display: inline-block; animation: secret-turn 1s ease-in-out; }
+@keyframes secret-turn { to { transform: rotate(360deg); } }
+.faq-list details[open] summary > span { transform: rotate(45deg); }
+.faq-list summary > span { transition: transform .22s; }
+.motion-reduced .water-splash { display: none; }
+.journey-static-copy > p { max-width: 285px; color: #d0ddcd; font-size: 15px; margin-top: 26px; }
+.journey-static-copy > .eyebrow { margin-top: 0; font-size: 10px; }
+.journey-mode { pointer-events: auto; margin-top: 18px; font-size: 11px; }
+.journey-mode-label { display: block; color: #b5c7bc; }
+.journey-retry { min-height: 44px; margin-top: 5px; padding: 8px 0; border: 0; border-bottom: 1px solid #fa854b88; color: var(--orange); background: transparent; font-size: 13px; }
+.journey-retry[hidden] { display: none; }
+.motion-reduced .photo-stamp, .motion-reduced .faq-list summary > span { transition: none; }
+@media (prefers-reduced-motion: reduce) {
+  .water-splash { display: none; }
+  .photo-stamp, .faq-list summary > span { transition: none; }
+}
+@media (max-width: 760px) {
+  .journey-static-copy > p { font-size: 13px; margin-top: 16px; margin-bottom: 10px; }
+  .journey-mode { margin-top: 5px; }
+  .journey-retry { font-size: 12px; }
+  .motion-reduced .journey-stage, .sequence-unavailable .journey-stage { height: 830px; }
+  .motion-reduced .journey-art, .sequence-unavailable .journey-art { top: 68%; }
+}

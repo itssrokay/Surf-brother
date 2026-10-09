@@ -1,0 +1,166 @@
+{
+  "date": "2026-10-09",
+  "productionResponses": [
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 4747,
+      "type": "text/html"
+    },
+    {
+      "path": "/surfboard-cursor.svg",
+      "status": 200,
+      "bytes": 489,
+      "type": "image/svg+xml"
+    },
+    {
+      "path": "/vercel.json",
+      "status": 200,
+      "bytes": 521,
+      "type": "application/json"
+    },
+    {
+      "path": "/media/journey/sequence.json",
+      "status": 200,
+      "bytes": 2478,
+      "type": "application/json"
+    },
+    {
+      "path": "/media/journey/poster.webp",
+      "status": 200,
+      "bytes": 31434,
+      "type": "image/webp"
+    },
+    {
+      "path": "/media/journey/shore.webp",
+      "status": 200,
+      "bytes": 24216,
+      "type": "image/webp"
+    },
+    {
+      "path": "/media/journey/packs/large/001-b5a40e59f82f.sbj",
+      "status": 200,
+      "bytes": 299695,
+      "type": ""
+    },
+    {
+      "path": "/media/journey/packs/large/013-b48d19106b01.sbj",
+      "status": 200,
+      "bytes": 304913,
+      "type": ""
+    },
+    {
+      "path": "/media/journey/packs/large/025-40b848efa067.sbj",
+      "status": 200,
+      "bytes": 313539,
+      "type": ""
+    },
+    {
+      "path": "/media/journey/packs/large/037-fff0bec2bb81.sbj",
+      "status": 200,
+      "bytes": 321233,
+      "type": ""
+    },
+    {
+      "path": "/media/journey/packs/large/049-b96dc950e745.sbj",
+      "status": 200,
+      "bytes": 329307,
+      "type": ""
+    },
+    {
+      "path": "/media/journey/packs/large/061-e3df96373f71.sbj",
+      "status": 200,
+      "bytes": 329787,
+      "type": ""
+    },
+    {
+      "path": "/media/journey/packs/large/073-06c8910d8b5f.sbj",
+      "status": 200,
+      "bytes": 329813,
+      "type": ""
+    },
+    {
+      "path": "/media/journey/packs/large/085-b833452da6b8.sbj",
+      "status": 200,
+      "bytes": 331665,
+      "type": ""
+    },
+    {
+      "path": "/media/journey/packs/small/001-1890d34e8ec4.sbj",
+      "status": 200,
+      "bytes": 166894,
+      "type": ""
+    },
+    {
+      "path": "/media/journey/packs/small/013-903df77d53ad.sbj",
+      "status": 200,
+      "bytes": 169809,
+      "type": ""
+    },
+    {
+      "path": "/media/journey/packs/small/025-b65acf26ffa2.sbj",
+      "status": 200,
+      "bytes": 176346,
+      "type": ""
+    },
+    {
+      "path": "/media/journey/packs/small/037-2897ed94fe93.sbj",
+      "status": 200,
+      "bytes": 180510,
+      "type": ""
+    },
+    {
+      "path": "/media/journey/packs/small/049-617d2755d133.sbj",
+      "status": 200,
+      "bytes": 183470,
+      "type": ""
+    },
+    {
+      "path": "/media/journey/packs/small/061-29df9f04b672.sbj",
+      "status": 200,
+      "bytes": 182974,
+      "type": ""
+    },
+    {
+      "path": "/media/journey/packs/small/073-4a6d62c7ca8f.sbj",
+      "status": 200,
+      "bytes": 183356,
+      "type": ""
+    },
+    {
+      "path": "/media/journey/packs/small/085-9b94ebf93684.sbj",
+      "status": 200,
+      "bytes": 184552,
+      "type": ""
+    },
+    {
+      "path": "/assets/index-DsRtQFQd.js",
+      "status": 200,
+      "bytes": 57251,
+      "type": "text/javascript"
+    },
+    {
+      "path": "/assets/index--L9ZF330.css",
+      "status": 200,
+      "bytes": 47432,
+      "type": "text/css"
+    }
+  ],
+  "packsByVariant": {
+    "large": {
+      "requests": 8,
+      "bytes": 2559952
+    },
+    "small": {
+      "requests": 8,
+      "bytes": 1427911
+    }
+  },
+  "gzipBundles": {
+    "index--L9ZF330.css": 10703,
+    "diagnostics-D5BFXMbd.js": 1041,
+    "index-DsRtQFQd.js": 20294
+  },
+  "testsPassed": 12,
+  "browserLimit": "Local preview binding rejected by browser URL policy. New UI not visually verified in this turn. Hosted baseline inspected separately."
+}

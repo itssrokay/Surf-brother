@@ -1,0 +1,20 @@
+site/node_modules/
+site/dist/
+.DS_Store
+*.blend1
+
+# Keep original owner media and render intermediates locally.
+# The website uses the optimized, tracked files in site/public/media/.
+assets/originals/
+assets/contact-sheets/
+assets/unused-exports/
+assets/blender/journey/frames/
+
+# Rebuild upload archives rather than versioning duplicate deployment output.
+deliverables/
+
+# Local configuration and credentials.
+.env
+.env.*
+!.env.example
+.vercel/

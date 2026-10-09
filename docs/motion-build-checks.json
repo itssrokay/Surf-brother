@@ -1,0 +1,11 @@
+{
+  "checked": "2026-10-09",
+  "animationAssetHttpChecks": 193,
+  "failures": [],
+  "mainJavaScriptGzipBytes": 18727,
+  "cssGzipBytes": 9600,
+  "journeyBytes": {
+    "small": 1423714,
+    "large": 2555730
+  }
+}

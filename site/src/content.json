@@ -1,0 +1,521 @@
+{
+  "brand": {
+    "name": "SurfBrothers Mulki",
+    "tagline": "Stay • Surf • Belong",
+    "description": "Welcome to SurfBrothers Mulki, your laid-back surf stay by the backwaters, with waves, music, good people and unforgettable experiences.",
+    "closing": "Come for the waves. Stay for the people. Leave with stories.",
+    "location": "Chitrapu Village, Mulki, Karnataka",
+    "address": "Door No. 20-63, Chitrapu Village, Mulki, Kilpady, Karnataka 574154"
+  },
+  "contacts": {
+    "phones": [
+      {
+        "display": "+91 97393 19902",
+        "e164": "+919739319902",
+        "whatsapp": "919739319902"
+      },
+      {
+        "display": "+91 99721 58288",
+        "e164": "+919972158288",
+        "whatsapp": "919972158288"
+      }
+    ],
+    "verified": true,
+    "verifiedSources": [
+      "Owner-provided via user",
+      "https://surfbrothers.in/",
+      "https://www.instagram.com/surfbrothers_mulki/"
+    ],
+    "map": "https://maps.app.goo.gl/rz4vBZACQcednSep7",
+    "instagram": "https://www.instagram.com/surfbrothers_mulki/"
+  },
+  "source": {
+    "date": "2026-10-08",
+    "authority": "Owner-provided via user",
+    "mediaFolder": "https://drive.google.com/drive/folders/1RAfh0OY4DOHOkOqpSFSJlpPXYV8ZsZ8j?usp=sharing",
+    "privatePrototype": true
+  },
+  "packages": {
+    "surfOnly": {
+      "label": "Surf Only",
+      "priceBasis": "per person",
+      "sessionHours": 2,
+      "courses": [
+        {
+          "days": 1,
+          "sessions": 1,
+          "rate": 2000
+        },
+        {
+          "days": 3,
+          "sessions": 3,
+          "rate": 6000
+        },
+        {
+          "days": 5,
+          "sessions": 5,
+          "rate": 10000
+        },
+        {
+          "days": 7,
+          "sessions": 7,
+          "rate": 13000
+        },
+        {
+          "days": 10,
+          "sessions": 10,
+          "rate": 17000
+        }
+      ],
+      "inclusions": [
+        "2-hour group surf session",
+        "Surfboard & basic surf equipment",
+        "Instructor guidance"
+      ],
+      "exclusions": [
+        "Accommodation and meals are not included.",
+        "Guests staying elsewhere arrange their own travel to the surf location."
+      ],
+      "payment": "Full payment confirms booking. No refund after booking.",
+      "private": {
+        "label": "Private 1:1 training",
+        "rate": 3000,
+        "basis": "per person per session",
+        "inclusions": [
+          "Private 1:1 surf training"
+        ],
+        "note": "Ask about session duration and equipment before booking."
+      }
+    },
+    "staySurf": {
+      "label": "Stay & Surf",
+      "priceBasis": null,
+      "accommodation": [
+        {
+          "id": "camping",
+          "label": "Camping"
+        },
+        {
+          "id": "nonAc",
+          "label": "Non-AC Hostel"
+        },
+        {
+          "id": "ac",
+          "label": "AC Hostel"
+        }
+      ],
+      "courses": [
+        {
+          "days": 3,
+          "nights": 2,
+          "rates": {
+            "camping": 8000,
+            "nonAc": 9000,
+            "ac": 10000
+          }
+        },
+        {
+          "days": 5,
+          "nights": 4,
+          "rates": {
+            "camping": 11500,
+            "nonAc": 13500,
+            "ac": 15000
+          }
+        },
+        {
+          "days": 7,
+          "nights": 6,
+          "rates": {
+            "camping": 14500,
+            "nonAc": 16500,
+            "ac": 19500
+          }
+        },
+        {
+          "days": 10,
+          "nights": 9,
+          "rates": {
+            "camping": 18000,
+            "nonAc": 21000,
+            "ac": 25000
+          }
+        }
+      ],
+      "inclusions": [
+        "Accommodation for the selected nights",
+        "Daily surf lessons with instructors",
+        "Surfboard & basic surf equipment",
+        "Small-batch learning",
+        "Ice bath recovery",
+        "Cycling & outdoor activities",
+        "Bonfire, music, karaoke & movie nights",
+        "Wi-Fi & open kitchen access"
+      ],
+      "exclusions": [
+        "Meals are optional additions, not included.",
+        "Confirm travel to the surf beach and any extra activity costs with the team."
+      ],
+      "payment": "₹2,000 advance per person confirms booking; remaining payment at check-in. The advance is non-refundable.",
+      "rateNote": "Listed package rate. Confirm whether this is per person or per booking, and confirm your total and availability with the team."
+    },
+    "meals": [
+      {
+        "id": "none",
+        "label": "No meal add-on",
+        "rate": 0
+      },
+      {
+        "id": "veg",
+        "label": "Veg",
+        "rate": 300,
+        "basis": "per day"
+      },
+      {
+        "id": "nonVeg",
+        "label": "Non-Veg",
+        "rate": 400,
+        "basis": "per day"
+      }
+    ],
+    "mealsNote": "Optional additions. Confirm meal-day count, number of meals and dietary needs with the team.",
+    "offer": {
+      "title": "Surf Into Savings",
+      "amount": 1000,
+      "checkInDays": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "label": "₹1,000 off Stay & Surf for Monday–Thursday check-ins, subject to availability.",
+      "terms": "Not valid for Surf Only. Cannot be combined with other offers. Ask the team to confirm eligibility and the discount basis.",
+      "basis": null,
+      "expiry": null
+    },
+    "weather": "All surf sessions are subject to ocean and weather conditions.",
+    "unresolvedAssumptions": [
+      "Stay & Surf price basis: per person or per booking",
+      "Discount basis: per person or per booking",
+      "Meal-day counts and number of meals",
+      "Surf beach, lesson timings and transfers",
+      "Hostel allocation, sharing setup and camping equipment"
+    ]
+  },
+  "learning": {
+    "compare": [
+      {
+        "days": 3,
+        "title": "A first taste of the ocean",
+        "description": "A shorter introduction with time to practise the basics. A good starting point if you're trying surfing for the first time."
+      },
+      {
+        "days": 5,
+        "title": "Time to find your rhythm",
+        "description": "Two extra days for repetition, feedback and time with the board. Choose this if you can stay a little longer."
+      }
+    ],
+    "note": "These are suggested ways to choose a course, not promised outcomes. Everyone learns at their own pace; conditions shape each session.",
+    "longer": "Just one day? Surf Only starts at ₹2,000. Want more time? Both formats offer 7- and 10-day courses.",
+    "instructors": {
+      "heading": "Good coaching starts with a conversation.",
+      "description": "Instructor guidance is part of every group course. Tell the team about your experience and water confidence so they can discuss the right start for you.",
+      "confirmation": "Ask who will coach your dates, their qualifications and how the group is organised. The current instructor roster is being confirmed.",
+      "names": [],
+      "verified": false
+    }
+  },
+  "gallery": [
+    {
+      "id": "grounds",
+      "file": "hero.webp",
+      "thumb": "dji_20250102001341_0236_d-small.webp",
+      "alt": "Aerial view of the turquoise-trimmed SurfBrothers house among coconut palms",
+      "title": "Our little corner of Mulki",
+      "category": "spaces",
+      "original": "DJI_20250102001341_0236_D.JPG"
+    },
+    {
+      "id": "bunks",
+      "file": "stay-6.webp",
+      "thumb": "stay-6-small.webp",
+      "alt": "Owner photograph of a room with bunk beds, fans and a washbasin",
+      "title": "Inside the hostel",
+      "category": "rooms",
+      "original": "PHOTO-2026-02-13-20-40-29(6).jpg"
+    },
+    {
+      "id": "camping",
+      "file": "stay-4.webp",
+      "thumb": "stay-4-small.webp",
+      "alt": "Green tent, outdoor chairs and a hammock under coconut palms",
+      "title": "Camping under the palms",
+      "category": "camping",
+      "original": "PHOTO-2026-02-13-20-40-29(4).jpg"
+    },
+    {
+      "id": "shared",
+      "file": "stay-7.webp",
+      "thumb": "stay-7-small.webp",
+      "alt": "Shared indoor room with seating, a table and exposed roof beams",
+      "title": "Room to hang out",
+      "category": "spaces",
+      "original": "PHOTO-2026-02-13-20-40-29(7).jpg"
+    },
+    {
+      "id": "beds",
+      "file": "stay-8.webp",
+      "thumb": "stay-8-small.webp",
+      "alt": "Two single beds with patterned bedding in an owner-supplied room photo",
+      "title": "A look inside the rooms",
+      "category": "rooms",
+      "original": "PHOTO-2026-02-13-20-40-29(8).jpg"
+    },
+    {
+      "id": "night",
+      "file": "img_8272.webp",
+      "thumb": "img_8272-small.webp",
+      "alt": "SurfBrothers veranda and grounds under warm string lights in the evening",
+      "title": "The house after sunset",
+      "category": "spaces",
+      "original": "IMG_8272.HEIC"
+    },
+    {
+      "id": "tents",
+      "file": "img_8225.webp",
+      "thumb": "img_8225-small.webp",
+      "alt": "A row of green tents beneath a shade canopy in the outdoor grounds",
+      "title": "A slower place to wake up",
+      "category": "camping",
+      "original": "IMG_8225.HEIC"
+    },
+    {
+      "id": "movie",
+      "file": "img_8229.webp",
+      "thumb": "img_8229-small.webp",
+      "alt": "People watching a screen in an open-sided covered space at night",
+      "title": "A movie night, caught on camera",
+      "category": "spaces",
+      "original": "IMG_8229.HEIC"
+    }
+  ],
+  "stay": {
+    "description": "A laid-back base by the backwaters, with coconut palms, shared spaces and room to unwind after the surf. Choose camping, Non-AC Hostel or AC Hostel in your package.",
+    "photoNote": "These are photographs of our stay. Room allocation, AC category and sharing setup depend on availability; confirm with the team.",
+    "bathroomNote": "Want a closer look at the bathrooms? Ask for current photos, amenities and the sharing setup before booking.",
+    "video": "house-evening.mp4",
+    "videoPoster": "img_8272-small.webp"
+  },
+  "life": {
+    "routineNote": "A sample rhythm, not a timetable. Lesson times follow ocean conditions; the team confirms the plan for your dates. Evening activities vary and are not promised every night.",
+    "routine": [
+      {
+        "label": "GET IN THE WATER",
+        "title": "Meet your coach. Meet the ocean.",
+        "description": "An instructor-guided surf lesson with time on the board. Your team confirms the location and timing."
+      },
+      {
+        "label": "RESET & REFUEL",
+        "title": "Take the slow way back.",
+        "description": "Rest, an ice bath or a meal of your choice. Meals are optional additions; the kitchen is open for your own cooking."
+      },
+      {
+        "label": "MAKE THE DAY YOURS",
+        "title": "A ride, a hammock, a good chat.",
+        "description": "Cycling and outdoor time, or a quiet corner with Wi-Fi. Ask about local outings and paid activities."
+      },
+      {
+        "label": "WHEN THE SUN GOES DOWN",
+        "title": "See where the evening takes you.",
+        "description": "Music, karaoke, a bonfire or a movie may bring everyone together. Sometimes the best plan is no plan."
+      }
+    ],
+    "included": "Ice bath recovery, cycling, outdoor activities, Wi-Fi and open kitchen access are included in Stay & Surf.",
+    "occasional": "Bonfire, music, karaoke and movie nights are package inclusions. Their timing varies; ask what is planned during your stay.",
+    "optional": "Curious about kayaking? Ask about current options, price and conditions. It is not included in the listed packages; bioluminescence is never guaranteed.",
+    "independent": "Beach sunsets, cafés or exploring the coast are independent outings. Arrange your own transport and budget for any entry fees."
+  },
+  "reviews": [
+    {
+      "quote": "The surf sessions were professional, beginner friendly, and attention to each individual is what stood out for me.",
+      "name": "Gnana Swaroop",
+      "sourceLabel": "Guest review via Go Careless",
+      "url": "https://www.gocareless.in/schools/surf-brothers"
+    },
+    {
+      "quote": "I went solo , came back with only love from people who treat strangers like family",
+      "name": "@tanishkaasetty",
+      "sourceLabel": "Guest story on Instagram",
+      "url": "https://www.instagram.com/tanishkaasetty/reel/DeE1jWJBgxZ/"
+    }
+  ],
+  "arrival": {
+    "description": "Find us in Chitrapu Village, Mulki. This map pin is for the stay. The surf beach and the route to lessons are confirmed separately by the team.",
+    "routes": [
+      {
+        "title": "By train or bus",
+        "description": "Plan your route to Mulki. Share your arrival point with the team and ask about the last stretch to the stay."
+      },
+      {
+        "title": "Flying in?",
+        "description": "Mangaluru is the nearby airport option. Confirm your onward route and transfer arrangements before you travel."
+      }
+    ],
+    "bring": [
+      "Comfortable swimwear and a rash guard",
+      "Sun protection, a hat and a reusable water bottle",
+      "A towel, dry clothes and sandals",
+      "Your personal essentials and any medication"
+    ],
+    "bringNote": "Ask the team about equipment, swimming requirements and what your accommodation provides."
+  },
+  "faqs": [
+    {
+      "question": "I've never surfed. Where should I start?",
+      "answer": "The 3-day course gives you a shorter introduction; 5 days gives you more time to practise and receive feedback. Instructor guidance and basic surf equipment are included in group courses. Tell the team your experience and water confidence before booking. Progress varies for every surfer."
+    },
+    {
+      "question": "Do I need to know how to swim?",
+      "answer": "Discuss your swimming ability and water confidence with the team before booking. Ask about their participation requirements and safety arrangements. Ocean conditions vary, and surfing cannot be described as risk-free."
+    },
+    {
+      "question": "What's the difference between Surf Only and Stay & Surf?",
+      "answer": "Surf Only is a course without accommodation, with a 2-hour group session, surfboard/basic equipment and instructor guidance. Arrange your own travel to the surf location. Stay & Surf adds the selected nights of accommodation, daily lessons, small-batch learning and the listed recovery and social inclusions. Meals remain optional additions."
+    },
+    {
+      "question": "Are meals included?",
+      "answer": "No. Optional daily meals are Veg ₹300/day or Non-Veg ₹400/day. Confirm the number of meals, how many days you need and dietary options with the team. Stay & Surf includes open kitchen access."
+    },
+    {
+      "question": "How do payments and refunds work?",
+      "answer": "Surf Only: full payment confirms your booking, with no refund after booking. Stay & Surf: ₹2,000 advance per person confirms your booking, with the remaining payment at check-in; the advance is non-refundable. Confirm the final total and availability directly with the team. This website does not take payments or reserve beds."
+    },
+    {
+      "question": "How does the weekday offer work?",
+      "answer": "Surf Into Savings is ₹1,000 off Stay & Surf for Monday–Thursday check-ins, subject to availability. It does not apply to Surf Only and cannot be combined with other offers. The team must confirm eligibility and whether the discount is per person or per booking."
+    },
+    {
+      "question": "Is the hostel on the surf beach?",
+      "answer": "The stay is by the backwaters in Chitrapu Village, Mulki. The map here points to the stay. Ask the team to confirm the actual surf beach, travel arrangements and any transfer costs for your package."
+    },
+    {
+      "question": "Which room or tent will I stay in?",
+      "answer": "Camping, Non-AC Hostel and AC Hostel are the listed options. Confirm current room allocation, sharing setup, bathrooms and amenities. Private rooms, bed counts, mixed dorms and camping equipment are not confirmed by these package labels."
+    },
+    {
+      "question": "What if the ocean conditions change?",
+      "answer": "All surf sessions are subject to ocean and weather conditions. Ask the team how they handle changes for your dates before paying. No rescheduling or cancellation exception is promised here."
+    },
+    {
+      "question": "Can I work from the stay?",
+      "answer": "Wi-Fi and open kitchen access are included in Stay & Surf. If your work needs dependable calls or specific bandwidth, ask about the current connection and power arrangements before booking."
+    },
+    {
+      "question": "Is kayaking or bioluminescence part of my package?",
+      "answer": "Kayaking is not a listed inclusion. Ask about current options, separate pricing and conditions. Bioluminescence is a natural phenomenon and cannot be guaranteed. Evening social activities also vary during your stay."
+    }
+  ],
+  "journey": {
+    "artworkNote": "Original stylised illustration of a surfing journey; not a depiction of the actual surf beach or a promise of learning outcomes.",
+    "chapters": [
+      {
+        "label": "A LITTLE CURIOSITY",
+        "shortLabel": "Shore",
+        "title": "LEAVE<br>THE <em>SHORE.</em>",
+        "description": "A board. Bare feet. A new way to spend the day."
+      },
+      {
+        "label": "ONE PADDLE AT A TIME",
+        "shortLabel": "Paddle",
+        "title": "MEET<br>THE <em>OCEAN.</em>",
+        "description": "Slow down. Listen to your coach. Find your own rhythm in the water."
+      },
+      {
+        "label": "THAT FEELING",
+        "shortLabel": "Ride",
+        "title": "FIND<br>YOUR <em>FLOW.</em>",
+        "description": "Learning, trying, laughing. The good stuff happens along the way."
+      }
+    ]
+  },
+  "planning": {
+    "headline": "PICK YOUR MONTH.\nFIND YOUR MOMENT.",
+    "intro": "First surf trip? October–February is a useful starting window for Mulki. Choose a month for a little more context.",
+    "note": "General seasonal guidance, not lesson availability or a daily surf forecast. The SurfBrothers team confirms conditions and the plan for your dates.",
+    "months": [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+    ],
+    "seasons": [
+      {
+        "id": "favourite",
+        "months": [
+          0,
+          1,
+          9,
+          10,
+          11
+        ],
+        "label": "A good starting window",
+        "title": "A little winter. A lot of coast.",
+        "text": "Local surf guidance highlights October–February for a first Mulki trip. Choose your dates, then ask the team about lessons and accommodation.",
+        "icon": "sun"
+      },
+      {
+        "id": "summer",
+        "months": [
+          2,
+          3,
+          4
+        ],
+        "label": "The wider surf season",
+        "title": "Longer days. A slower pace.",
+        "text": "March–May is within the wider beginner season described by local guides. As summer approaches, plan for the heat and confirm conditions with the team.",
+        "icon": "sun"
+      },
+      {
+        "id": "monsoon",
+        "months": [
+          5,
+          6,
+          7,
+          8
+        ],
+        "label": "Monsoon · check before planning",
+        "title": "The ocean sets the pace.",
+        "text": "June–September brings the southwest monsoon and more powerful surf. Some schools pause beginner lessons. Ask SurfBrothers directly about your dates before planning a surf trip.",
+        "icon": "rain"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Mulki seasonal guide · Walk on Water",
+        "url": "https://walkonwater.in/surfing-in-mulki/"
+      },
+      {
+        "label": "Seasonal context · Mantra Surf Club",
+        "url": "https://surfingindia.net/random-stuff/waves-less-surfed-tips-unforgettable-indian-surfari/"
+      }
+    ],
+    "weather": {
+      "latitude": 13.0699,
+      "longitude": 74.7826,
+      "provider": "MET Norway",
+      "endpoint": "https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=13.0699&lon=74.7826",
+      "source": "https://api.met.no/",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "timezone": "Asia/Kolkata",
+      "note": "Air weather near the stay. Surf conditions and lesson decisions are confirmed separately by your coach."
+    }
+  }
+}

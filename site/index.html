@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow,noarchive" />
+    <meta name="theme-color" content="#073e3e" />
+    <script>
+      (() => { let choice = 'auto'; try { choice = localStorage.getItem('surfbrothers-theme') || 'auto'; } catch {} document.documentElement.dataset.theme = choice === 'surf' || (choice !== 'sun' && matchMedia('(prefers-color-scheme: dark)').matches) ? 'surf' : 'sun'; })();
+    </script>
+    <title>SurfBrothers Mulki — Stay • Surf • Belong</title>
+    <meta
+      name="description"
+      content="Learn to surf and find your people at SurfBrothers Mulki, a laid-back surf stay by the backwaters. Explore Surf Only and Stay & Surf packages."
+    />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="/fonts/barlow-condensed-800.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="preload" href="/media/hero.webp" as="image" />
+    <meta
+      property="og:title"
+      content="SurfBrothers Mulki — Stay • Surf • Belong"
+    />
+    <meta
+      property="og:description"
+      content="Come for the waves. Stay for the people. Leave with stories."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="http://127.0.0.1:4173/social-preview.jpg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="header">
+      <a class="brand" href="#" aria-label="SurfBrothers Mulki home"
+        ><span class="brand-mark" aria-hidden="true">≈</span
+        ><span>SURFBROTHERS<small>MULKI · STAY / SURF / BELONG</small></span></a
+      >
+      <nav aria-label="Main navigation">
+        <a href="#learn">The surf</a><a href="#packages">Packages</a
+        ><a href="#stay">The stay</a><a href="#when-to-come">Plan your trip</a>
+      </nav>
+      <div class="header-actions">
+      <button class="display-switch" type="button" aria-label="Switch to Surf mode" aria-pressed="false"><span class="mode-glyph" aria-hidden="true">☼</span><span class="mode-name">Sun</span></button>
+      <a class="button nav-inquire" data-direct-inquiry href="https://wa.me/919739319902" target="_blank" rel="noopener noreferrer" aria-label="Inquire on WhatsApp">Inquire <span aria-hidden="true">↗</span></a>
+      <a class="button orange nav-book" href="#packages">Book now <span aria-hidden="true">↗</span></a>
+      <button
+        class="menu-toggle"
+        aria-expanded="false"
+        aria-controls="mobile-nav"
+      >
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg><span class="sr-only">Menu</span>
+      </button>
+      </div>
+    </header>
+    <nav id="mobile-nav" aria-label="Mobile navigation" hidden>
+      <a href="#packages">Packages & booking</a><a href="#learn">The surf</a><a href="#stay">The stay</a
+      ><a href="#life">The good life</a
+      ><a href="#when-to-come">Plan your trip · months & weather</a
+      ><a href="#arrive">Getting here</a
+      ><a href="#faq">Good to know</a>
+      <a data-direct-inquiry href="https://wa.me/919739319902" target="_blank" rel="noopener noreferrer">Inquire on WhatsApp ↗</a>
+    </nav>
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="arrival-swell" aria-hidden="true"><span>STAY. SURF. BELONG.</span></div>
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="sun" aria-hidden="true">✳</span> A SURF SCHOOL. A
+            STAY. YOUR PEOPLE.
+          </p>
+          <h1 id="hero-title">
+            <span class="hero-line"><span>GOOD WAVES.</span></span><span class="hero-line"><em>BETTER</em></span><span class="hero-line"><span>COMPANY.</span></span>
+          </h1>
+          <p class="hero-description">
+            Your first wave. A slower kind of day. A little home by the
+            backwaters of Mulki.
+          </p>
+          <a class="button orange" href="#packages">Find your surf trip</a
+          ><a class="hero-link" href="#surf-journey">Catch the feeling <span aria-hidden="true">↓</span></a>
+          <p class="hero-foot">
+            KARNATAKA, INDIA <span>MULKI · A COASTAL STATE OF MIND</span>
+          </p>
+        </div>
+        <figure class="hero-photo">
+          <img
+            src="/media/hero.webp"
+            width="1440"
+            height="1080"
+            alt="The SurfBrothers house and outdoor grounds among coconut palms in Mulki"
+            fetchpriority="high"
+          />
+          <div class="photo-label">
+            <span>THIS IS OUR LITTLE CORNER OF MULKI.</span
+            ><span>MAKE YOURSELF AT HOME.</span>
+          </div>
+          <span class="photo-stamp"
+            >STAY<br />
+            SURF<br /><em>BELONG</em></span
+          >
+        </figure>
+      </section>
+      <div class="ticker" aria-hidden="true">
+        <span>LESS SCROLLING</span><b>✳</b><span>MORE PADDLING</span><b>✳</b
+        ><span>STAY • SURF • BELONG</span><b>✳</b><span>SEE YOU IN MULKI</span>
+      </div>
+      <section id="learn" class="intro section">
+        <p class="eyebrow">01 / FIND YOUR FEET</p>
+        <h2>THE OCEAN IS<br />A GOOD PLACE<br />TO START.</h2>
+        <p>
+          Welcome to SurfBrothers Mulki, your laid-back surf stay by the
+          backwaters, with waves, music, good people and unforgettable
+          experiences.
+        </p>
+        <a class="text-link" href="#packages">Explore the courses</a>
+      </section>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

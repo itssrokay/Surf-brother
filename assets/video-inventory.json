@@ -1,0 +1,149 @@
+[
+  {
+    "filename": "DJI_20250102001306_0235_D.MP4",
+    "duration": 24.2242,
+    "bytes": 155648382,
+    "streams": [
+      {
+        "type": "video",
+        "codec": "hevc",
+        "width": 1512,
+        "height": 2688
+      },
+      {
+        "type": "data",
+        "codec": null,
+        "width": null,
+        "height": null
+      },
+      {
+        "type": "video",
+        "codec": "mjpeg",
+        "width": 540,
+        "height": 960
+      }
+    ]
+  },
+  {
+    "filename": "IMG_8266.MOV",
+    "duration": 9.433333,
+    "bytes": 18173276,
+    "streams": [
+      {
+        "type": "video",
+        "codec": "hevc",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "type": "audio",
+        "codec": "aac",
+        "width": null,
+        "height": null
+      },
+      {
+        "type": "audio",
+        "codec": null,
+        "width": null,
+        "height": null
+      },
+      {
+        "type": "data",
+        "codec": null,
+        "width": null,
+        "height": null
+      },
+      {
+        "type": "data",
+        "codec": null,
+        "width": null,
+        "height": null
+      },
+      {
+        "type": "data",
+        "codec": null,
+        "width": null,
+        "height": null
+      },
+      {
+        "type": "data",
+        "codec": null,
+        "width": null,
+        "height": null
+      },
+      {
+        "type": "data",
+        "codec": null,
+        "width": null,
+        "height": null
+      },
+      {
+        "type": "data",
+        "codec": null,
+        "width": null,
+        "height": null
+      }
+    ]
+  },
+  {
+    "filename": "IMG_8271.MOV",
+    "duration": 13.066667,
+    "bytes": 22455400,
+    "streams": [
+      {
+        "type": "video",
+        "codec": "hevc",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "type": "audio",
+        "codec": "aac",
+        "width": null,
+        "height": null
+      },
+      {
+        "type": "audio",
+        "codec": null,
+        "width": null,
+        "height": null
+      },
+      {
+        "type": "data",
+        "codec": null,
+        "width": null,
+        "height": null
+      },
+      {
+        "type": "data",
+        "codec": null,
+        "width": null,
+        "height": null
+      },
+      {
+        "type": "data",
+        "codec": null,
+        "width": null,
+        "height": null
+      },
+      {
+        "type": "data",
+        "codec": null,
+        "width": null,
+        "height": null
+      },
+      {
+        "type": "data",
+        "codec": null,
+        "width": null,
+        "height": null
+      },
+      {
+        "type": "data",
+        "codec": null,
+        "width": null,
+        "height": null
+      }
+    ]
+  }
+]

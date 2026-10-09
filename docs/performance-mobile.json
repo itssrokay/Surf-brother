@@ -1,0 +1,127 @@
+{
+  "lcpMs": 180,
+  "cls": 0,
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "scrollWidth": 375,
+  "domContentLoadedMs": 85.40000000596046,
+  "transferBytes": 5400,
+  "resourceCount": 18,
+  "resources": [
+    {
+      "name": "barlow-condensed-800.woff2",
+      "transferBytes": 300,
+      "durationMs": 29.30000001192093
+    },
+    {
+      "name": "index-Br1pbBiy.js",
+      "transferBytes": 300,
+      "durationMs": 20.900000005960464
+    },
+    {
+      "name": "hero.webp",
+      "transferBytes": 300,
+      "durationMs": 27.200000017881393
+    },
+    {
+      "name": "index-CNFRZnpq.css",
+      "transferBytes": 300,
+      "durationMs": 19.099999994039536
+    },
+    {
+      "name": "surfbrothers-board.webp",
+      "transferBytes": 300,
+      "durationMs": 17.399999976158142
+    },
+    {
+      "name": "img_8272-small.webp",
+      "transferBytes": 300,
+      "durationMs": 17.69999998807907
+    },
+    {
+      "name": "img_8272.webp",
+      "transferBytes": 300,
+      "durationMs": 18.799999982118607
+    },
+    {
+      "name": "dji_20250102001341_0236_d-small.webp",
+      "transferBytes": 300,
+      "durationMs": 20.599999994039536
+    },
+    {
+      "name": "stay-6-small.webp",
+      "transferBytes": 300,
+      "durationMs": 35.099999994039536
+    },
+    {
+      "name": "stay-4-small.webp",
+      "transferBytes": 300,
+      "durationMs": 36.19999998807907
+    },
+    {
+      "name": "stay-8-small.webp",
+      "transferBytes": 300,
+      "durationMs": 35.599999994039536
+    },
+    {
+      "name": "stay-7-small.webp",
+      "transferBytes": 300,
+      "durationMs": 35.900000005960464
+    },
+    {
+      "name": "img_8225-small.webp",
+      "transferBytes": 300,
+      "durationMs": 45.79999998211861
+    },
+    {
+      "name": "img_8229-small.webp",
+      "transferBytes": 300,
+      "durationMs": 46.400000005960464
+    },
+    {
+      "name": "diagnostics-B559OOYe.js",
+      "transferBytes": 300,
+      "durationMs": 35.099999994039536
+    },
+    {
+      "name": "dm-sans.woff2",
+      "transferBytes": 300,
+      "durationMs": 17.899999976158142
+    },
+    {
+      "name": "barlow-condensed-ext-800.woff2",
+      "transferBytes": 300,
+      "durationMs": 17.5
+    },
+    {
+      "name": "dm-sans-ext.woff2",
+      "transferBytes": 300,
+      "durationMs": 27.799999982118607
+    }
+  ],
+  "webglCanvasCount": 0,
+  "reducedMotionRequested": true,
+  "boardAnimation": "none",
+  "focusElement": "BODY",
+  "focusOutline": "none",
+  "overflowElements": [
+    "TABLE",
+    "CAPTION",
+    "THEAD",
+    "TR",
+    "TH",
+    "TBODY",
+    "TR",
+    "TD",
+    "TR",
+    "TD",
+    "TR",
+    "TD",
+    "TR",
+    "TD",
+    "closing-sun"
+  ],
+  "missingImages": []
+}

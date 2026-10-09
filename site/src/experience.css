@@ -1,0 +1,131 @@
+/* A simple task order, with the cinematic story after the package decision. */
+.header { gap: 22px; }
+.header nav { gap: 22px; }
+.header-actions { gap: 10px; }
+.nav-inquire { min-width: 0; padding-inline: 18px; }
+.nav-book { white-space: nowrap; gap: 10px; padding-inline: 18px; }
+/* The always-visible header now carries the booking action, so nothing covers
+   the month picker or form controls on small screens. */
+.sticky-cta:not(.in-package), .sticky-cta.in-package { display: none; }
+.booking-intro { font-size: 13px; color: var(--muted); margin: 22px 0; }
+.course-help { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); margin-bottom: 22px; }
+.course-help > summary { display: flex; align-items: center; justify-content: space-between; padding: 20px 0; min-height: 64px; font-size: 14px; cursor: pointer; list-style: none; gap: 16px; }
+.course-help summary::-webkit-details-marker { display: none; }
+.course-help > summary strong { font-weight: 500; border-bottom: 1px solid var(--ink); margin-left: 8px; }
+.course-help > summary > span:last-child { font-size: 24px; transition: transform .25s; }
+.course-help[open] > summary > span:last-child { transform: rotate(45deg); }
+.course-help .course-comparison { margin: 10px 0 0; padding-top: 0; border: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+.course-help .comparison-intro { display: none; }
+.course-help .course-comparison article { border-top: 0; padding: 10px 0 20px; }
+.course-help .comparison-foot { padding: 0 0 18px; margin: 0; font-size: 11px; }
+.course-help .comparison-foot p { font-size: 11px; }
+.learn .learn-grid { min-height: 0; }
+.learn { padding-bottom: 65px; }
+.theme-tide { position: fixed; inset: 0; z-index: 2000; pointer-events: none; visibility: hidden; overflow: clip; }
+.theme-tide.is-running { visibility: visible; }
+.theme-water { position: absolute; inset: 0; background: var(--tide-colour); transform: translateY(calc(100dvh + 160px)); color: var(--foam-colour); }
+.theme-water svg { position: absolute; top: -149px; width: 100%; height: 150px; fill: var(--tide-colour); }
+.theme-water .theme-foam { fill: var(--foam-colour); }
+.theme-water > span { position: absolute; top: 42%; left: 50%; transform: translate(-50%,-50%); font-size: 110px; opacity: .35; }
+.theme-tide.is-running .theme-water { animation: mode-tide 1.05s cubic-bezier(.65,0,.35,1) both; }
+@keyframes mode-tide { 0% { transform: translateY(calc(100dvh + 160px)); } 44%, 55% { transform: translateY(0); } 100% { transform: translateY(calc(-100dvh - 160px)); } }
+.trip-planner { background: #ede8d9; background: color-mix(in srgb, var(--mood-sky) 22%, var(--page)); transition: background-color .7s; }
+[data-theme="surf"] .trip-planner { background: #0b262d; background: color-mix(in srgb, var(--mood-sea) 10%, #0b262d); }
+.trip-planner .section-top { margin-bottom: 38px; }
+.trip-planner h2 { font-size: clamp(3rem, 5.3vw, 5rem); }
+.season-experience { margin-bottom: 26px; }
+.scene-controls { display: grid; grid-template-columns: 1fr 1fr; column-gap: 20px; padding-top: 16px; }
+.scene-controls .month-picker { grid-column: 1 / -1; grid-template-columns: repeat(12, 1fr); margin: 0 0 14px; }
+.scene-controls .month-picker button { min-height: 60px; }
+.scene-controls .scene-disclaimer { text-align: right; margin: 0; }
+.season-scene { position: relative; height: 360px; overflow: clip; border-radius: 8px; background: var(--mood-sky); isolation: isolate; }
+.season-landscape { display: block; width: 100%; height: 100%; }
+.season-landscape :is(path, circle, stop) { transition: fill .75s, stroke .75s, stop-color .75s; }
+.scene-caption { position: absolute; inset: 35px auto auto 35px; color: #153f3e; max-width: 45%; }
+.scene-caption p { font-size: 10px; font-weight: 600; letter-spacing: .12em; margin: 0 0 12px; }
+.scene-month { display: block; font-family: var(--display); font-size: clamp(4rem, 7vw, 6rem); line-height: 1; letter-spacing: -.02em; }
+.scene-mood { display: block; font-size: 15px; line-height: 1.6; margin-top: 14px; max-width: 245px; }
+.scene-index { position: absolute; bottom: 20px; right: 24px; color: #123c3b; font-size: 11px; font-weight: 600; letter-spacing: .1em; padding: 7px 10px; background: #f4e4cacc; border-radius: 3px; }
+.scene-disclaimer { color: var(--muted); font-size: 10px; margin: 10px 0 0; }
+.scene-sun { opacity: var(--sun-light); transform: translate(var(--sun-x),var(--sun-y)); transition: opacity .75s, transform .9s; }
+.scene-reflection { opacity: var(--sun-light); transition: opacity .8s; }
+.scene-palms-mobile { display: none; }
+.scene-clouds { opacity: var(--clouds); transition: opacity .8s; }
+.scene-rain { opacity: var(--rain); transition: opacity .8s; animation: coastal-rain 1.6s linear infinite; }
+.scene-ripples { animation: coastal-water 8s ease-in-out infinite alternate; }
+.scene-palm { transform-origin: 0 0; animation: coastal-palm 5s ease-in-out infinite alternate; }
+.scene-clouds { animation: coastal-clouds 16s ease-in-out infinite alternate; }
+.season-scene :is(.scene-rain,.scene-ripples,.scene-palm,.scene-clouds) { animation-play-state: paused; }
+.season-scene.scene-live :is(.scene-rain,.scene-ripples,.scene-palm,.scene-clouds) { animation-play-state: running; }
+@keyframes coastal-rain { to { transform: translate(-10px,28px); } }
+@keyframes coastal-water { to { transform: translateX(30px); } }
+@keyframes coastal-palm { from { transform: rotate(calc(-1 * var(--sway))); } to { transform: rotate(var(--sway)); } }
+@keyframes coastal-clouds { to { transform: translateX(22px); } }
+.planning-grid { align-items: start; grid-template-columns: 1.6fr 1fr; }
+.season-detail { min-height: 170px; padding-top: 26px; }
+.mulki-weather { border-radius: 8px; padding: 32px 28px 24px; }
+.weather-art { height: 75px; padding-top: 12px; }
+.weather-art svg { width: 45px; height: 45px; }
+.weather-art > span { font-size: 30px; }
+.weather-temperature { font-size: 5rem; margin-top: 16px; }
+.weather-facts { padding: 15px 0; margin: 16px 0; }
+.weather-time { min-height: 0; }
+@media (max-width: 1180px) {
+  .header .menu-toggle { display: inline-flex; align-items: center; justify-content: center; width: 44px; min-width: 44px; padding: 9px; color: var(--ink); }
+}
+@media (max-width: 760px) {
+  .header { gap: 6px; padding-inline: 4%; }
+  .header-actions { gap: 4px; }
+  .header .brand { gap: 4px; }
+  .header .brand-mark { font-size: 24px; }
+  .header .brand > span:last-child { font-size: 17px; }
+  .header .brand small { font-size: 5.5px; letter-spacing: .07em; }
+  .header .nav-book { display: inline-flex; min-height: 44px; font-size: 11px; padding: 9px 8px; gap: 0; }
+  .nav-book > span { display: none; }
+  .header .menu-toggle { padding: 9px; }
+  .course-help > summary { font-size: 12px; }
+  .course-help > summary strong { display: block; margin: 3px 0 0; width: fit-content; }
+  .course-help .course-comparison { display: block; }
+  .course-help .course-comparison article + article { border-top: 1px solid var(--line); padding-top: 20px; }
+  .course-help .course-number { font-size: 3rem; min-width: 65px; }
+  .course-help .comparison-foot { display: block; }
+  .trip-planner .section-top { margin-bottom: 26px; }
+  .trip-planner h2 { font-size: 2.6rem; }
+  .trip-planner .section-intro { font-size: 14px; }
+  .scene-controls { display: block; }
+  .scene-controls .month-picker { grid-template-columns: repeat(6,1fr); }
+  .scene-controls .scene-disclaimer { text-align: left; margin-top: 10px; }
+  .season-scene { height: 330px; }
+  .season-landscape { position: absolute; right: -150px; width: 900px; max-width: none; }
+  .scene-palms { display: none; }
+  .scene-palms-mobile { display: block; }
+  .scene-caption { inset: 25px auto auto 24px; max-width: 67%; }
+  .scene-caption p { font-size: 8px; max-width: 160px; }
+  .scene-month { font-size: 4rem; }
+  .scene-mood { font-size: 13px; max-width: 180px; margin-top: 10px; }
+  .scene-index { bottom: 14px; right: 14px; font-size: 9px; }
+  .planning-grid { display: block; }
+  .mulki-weather { margin-top: 28px; padding: 30px 24px 22px; border-radius: 8px; }
+  .weather-temperature { font-size: 5rem; }
+  .learn { padding-bottom: 44px; }
+}
+@media (max-width: 360px) {
+  .header { padding-inline: 3%; }
+  .header .brand > span:last-child { font-size: 15px; }
+  .header .brand small { font-size: 5px; }
+  .header .brand-mark { font-size: 20px; }
+}
+@media (max-width: 335px) {
+  .header .nav-inquire { font-size: 10px; padding-inline: 5px; }
+  .header .nav-book { font-size: 10px; padding-inline: 5px; }
+  .header .brand > span:last-child { font-size: 14px; }
+  .header .brand small { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .theme-tide { display: none; }
+  .trip-planner, .season-landscape :is(path,circle,stop), .scene-sun, .scene-clouds, .scene-rain, .scene-reflection { transition: none; }
+  .season-scene :is(.scene-rain,.scene-ripples,.scene-palm,.scene-clouds) { animation: none; }
+}
+[data-reduced-motion="true"] .theme-tide { display: none; }
+[data-reduced-motion="true"] .trip-planner, [data-reduced-motion="true"] .season-scene * { transition: none; }
+[data-reduced-motion="true"] .season-scene :is(.scene-rain,.scene-ripples,.scene-palm,.scene-clouds) { animation: none; }

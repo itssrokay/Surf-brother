@@ -1,0 +1,899 @@
+{
+  "frameCount": 96,
+  "width": 960,
+  "height": 960,
+  "variants": {
+    "large": 960,
+    "small": 600
+  },
+  "format": "webp",
+  "renderer": "Blender Cycles, 16 samples with denoising",
+  "concept": "Original stylised shore \u2192 paddle \u2192 ride journey. Not the actual surf beach.",
+  "exports": [
+    {
+      "path": "site/public/media/journey/large/001.webp",
+      "bytes": 24216
+    },
+    {
+      "path": "site/public/media/journey/large/002.webp",
+      "bytes": 24786
+    },
+    {
+      "path": "site/public/media/journey/large/003.webp",
+      "bytes": 24998
+    },
+    {
+      "path": "site/public/media/journey/large/004.webp",
+      "bytes": 24774
+    },
+    {
+      "path": "site/public/media/journey/large/005.webp",
+      "bytes": 24806
+    },
+    {
+      "path": "site/public/media/journey/large/006.webp",
+      "bytes": 24860
+    },
+    {
+      "path": "site/public/media/journey/large/007.webp",
+      "bytes": 24888
+    },
+    {
+      "path": "site/public/media/journey/large/008.webp",
+      "bytes": 25104
+    },
+    {
+      "path": "site/public/media/journey/large/009.webp",
+      "bytes": 25174
+    },
+    {
+      "path": "site/public/media/journey/large/010.webp",
+      "bytes": 25278
+    },
+    {
+      "path": "site/public/media/journey/large/011.webp",
+      "bytes": 25050
+    },
+    {
+      "path": "site/public/media/journey/large/012.webp",
+      "bytes": 25242
+    },
+    {
+      "path": "site/public/media/journey/large/013.webp",
+      "bytes": 25300
+    },
+    {
+      "path": "site/public/media/journey/large/014.webp",
+      "bytes": 25312
+    },
+    {
+      "path": "site/public/media/journey/large/015.webp",
+      "bytes": 25208
+    },
+    {
+      "path": "site/public/media/journey/large/016.webp",
+      "bytes": 25218
+    },
+    {
+      "path": "site/public/media/journey/large/017.webp",
+      "bytes": 25362
+    },
+    {
+      "path": "site/public/media/journey/large/018.webp",
+      "bytes": 25722
+    },
+    {
+      "path": "site/public/media/journey/large/019.webp",
+      "bytes": 25472
+    },
+    {
+      "path": "site/public/media/journey/large/020.webp",
+      "bytes": 25240
+    },
+    {
+      "path": "site/public/media/journey/large/021.webp",
+      "bytes": 25354
+    },
+    {
+      "path": "site/public/media/journey/large/022.webp",
+      "bytes": 25250
+    },
+    {
+      "path": "site/public/media/journey/large/023.webp",
+      "bytes": 25286
+    },
+    {
+      "path": "site/public/media/journey/large/024.webp",
+      "bytes": 25660
+    },
+    {
+      "path": "site/public/media/journey/large/025.webp",
+      "bytes": 25956
+    },
+    {
+      "path": "site/public/media/journey/large/026.webp",
+      "bytes": 25318
+    },
+    {
+      "path": "site/public/media/journey/large/027.webp",
+      "bytes": 25968
+    },
+    {
+      "path": "site/public/media/journey/large/028.webp",
+      "bytes": 25808
+    },
+    {
+      "path": "site/public/media/journey/large/029.webp",
+      "bytes": 26192
+    },
+    {
+      "path": "site/public/media/journey/large/030.webp",
+      "bytes": 26340
+    },
+    {
+      "path": "site/public/media/journey/large/031.webp",
+      "bytes": 26294
+    },
+    {
+      "path": "site/public/media/journey/large/032.webp",
+      "bytes": 26088
+    },
+    {
+      "path": "site/public/media/journey/large/033.webp",
+      "bytes": 26012
+    },
+    {
+      "path": "site/public/media/journey/large/034.webp",
+      "bytes": 26328
+    },
+    {
+      "path": "site/public/media/journey/large/035.webp",
+      "bytes": 26212
+    },
+    {
+      "path": "site/public/media/journey/large/036.webp",
+      "bytes": 26494
+    },
+    {
+      "path": "site/public/media/journey/large/037.webp",
+      "bytes": 26424
+    },
+    {
+      "path": "site/public/media/journey/large/038.webp",
+      "bytes": 26454
+    },
+    {
+      "path": "site/public/media/journey/large/039.webp",
+      "bytes": 26714
+    },
+    {
+      "path": "site/public/media/journey/large/040.webp",
+      "bytes": 26662
+    },
+    {
+      "path": "site/public/media/journey/large/041.webp",
+      "bytes": 26728
+    },
+    {
+      "path": "site/public/media/journey/large/042.webp",
+      "bytes": 26752
+    },
+    {
+      "path": "site/public/media/journey/large/043.webp",
+      "bytes": 26778
+    },
+    {
+      "path": "site/public/media/journey/large/044.webp",
+      "bytes": 26998
+    },
+    {
+      "path": "site/public/media/journey/large/045.webp",
+      "bytes": 26866
+    },
+    {
+      "path": "site/public/media/journey/large/046.webp",
+      "bytes": 26504
+    },
+    {
+      "path": "site/public/media/journey/large/047.webp",
+      "bytes": 26394
+    },
+    {
+      "path": "site/public/media/journey/large/048.webp",
+      "bytes": 27430
+    },
+    {
+      "path": "site/public/media/journey/large/049.webp",
+      "bytes": 27470
+    },
+    {
+      "path": "site/public/media/journey/large/050.webp",
+      "bytes": 27676
+    },
+    {
+      "path": "site/public/media/journey/large/051.webp",
+      "bytes": 27694
+    },
+    {
+      "path": "site/public/media/journey/large/052.webp",
+      "bytes": 26956
+    },
+    {
+      "path": "site/public/media/journey/large/053.webp",
+      "bytes": 27728
+    },
+    {
+      "path": "site/public/media/journey/large/054.webp",
+      "bytes": 27554
+    },
+    {
+      "path": "site/public/media/journey/large/055.webp",
+      "bytes": 27586
+    },
+    {
+      "path": "site/public/media/journey/large/056.webp",
+      "bytes": 27480
+    },
+    {
+      "path": "site/public/media/journey/large/057.webp",
+      "bytes": 27516
+    },
+    {
+      "path": "site/public/media/journey/large/058.webp",
+      "bytes": 27276
+    },
+    {
+      "path": "site/public/media/journey/large/059.webp",
+      "bytes": 26986
+    },
+    {
+      "path": "site/public/media/journey/large/060.webp",
+      "bytes": 26856
+    },
+    {
+      "path": "site/public/media/journey/large/061.webp",
+      "bytes": 27398
+    },
+    {
+      "path": "site/public/media/journey/large/062.webp",
+      "bytes": 27418
+    },
+    {
+      "path": "site/public/media/journey/large/063.webp",
+      "bytes": 27066
+    },
+    {
+      "path": "site/public/media/journey/large/064.webp",
+      "bytes": 27626
+    },
+    {
+      "path": "site/public/media/journey/large/065.webp",
+      "bytes": 27564
+    },
+    {
+      "path": "site/public/media/journey/large/066.webp",
+      "bytes": 27626
+    },
+    {
+      "path": "site/public/media/journey/large/067.webp",
+      "bytes": 27394
+    },
+    {
+      "path": "site/public/media/journey/large/068.webp",
+      "bytes": 27380
+    },
+    {
+      "path": "site/public/media/journey/large/069.webp",
+      "bytes": 27542
+    },
+    {
+      "path": "site/public/media/journey/large/070.webp",
+      "bytes": 27574
+    },
+    {
+      "path": "site/public/media/journey/large/071.webp",
+      "bytes": 27206
+    },
+    {
+      "path": "site/public/media/journey/large/072.webp",
+      "bytes": 27464
+    },
+    {
+      "path": "site/public/media/journey/large/073.webp",
+      "bytes": 26834
+    },
+    {
+      "path": "site/public/media/journey/large/074.webp",
+      "bytes": 27438
+    },
+    {
+      "path": "site/public/media/journey/large/075.webp",
+      "bytes": 26994
+    },
+    {
+      "path": "site/public/media/journey/large/076.webp",
+      "bytes": 27524
+    },
+    {
+      "path": "site/public/media/journey/large/077.webp",
+      "bytes": 27528
+    },
+    {
+      "path": "site/public/media/journey/large/078.webp",
+      "bytes": 27648
+    },
+    {
+      "path": "site/public/media/journey/large/079.webp",
+      "bytes": 27634
+    },
+    {
+      "path": "site/public/media/journey/large/080.webp",
+      "bytes": 27482
+    },
+    {
+      "path": "site/public/media/journey/large/081.webp",
+      "bytes": 27716
+    },
+    {
+      "path": "site/public/media/journey/large/082.webp",
+      "bytes": 27642
+    },
+    {
+      "path": "site/public/media/journey/large/083.webp",
+      "bytes": 27390
+    },
+    {
+      "path": "site/public/media/journey/large/084.webp",
+      "bytes": 27454
+    },
+    {
+      "path": "site/public/media/journey/large/085.webp",
+      "bytes": 28180
+    },
+    {
+      "path": "site/public/media/journey/large/086.webp",
+      "bytes": 27094
+    },
+    {
+      "path": "site/public/media/journey/large/087.webp",
+      "bytes": 27638
+    },
+    {
+      "path": "site/public/media/journey/large/088.webp",
+      "bytes": 27502
+    },
+    {
+      "path": "site/public/media/journey/large/089.webp",
+      "bytes": 27956
+    },
+    {
+      "path": "site/public/media/journey/large/090.webp",
+      "bytes": 27372
+    },
+    {
+      "path": "site/public/media/journey/large/091.webp",
+      "bytes": 27518
+    },
+    {
+      "path": "site/public/media/journey/large/092.webp",
+      "bytes": 27738
+    },
+    {
+      "path": "site/public/media/journey/large/093.webp",
+      "bytes": 27564
+    },
+    {
+      "path": "site/public/media/journey/large/094.webp",
+      "bytes": 27166
+    },
+    {
+      "path": "site/public/media/journey/large/095.webp",
+      "bytes": 27720
+    },
+    {
+      "path": "site/public/media/journey/large/096.webp",
+      "bytes": 27688
+    },
+    {
+      "path": "site/public/media/journey/poster.webp",
+      "bytes": 31434
+    },
+    {
+      "path": "site/public/media/journey/small/001.webp",
+      "bytes": 13886
+    },
+    {
+      "path": "site/public/media/journey/small/002.webp",
+      "bytes": 13876
+    },
+    {
+      "path": "site/public/media/journey/small/003.webp",
+      "bytes": 13878
+    },
+    {
+      "path": "site/public/media/journey/small/004.webp",
+      "bytes": 13792
+    },
+    {
+      "path": "site/public/media/journey/small/005.webp",
+      "bytes": 13774
+    },
+    {
+      "path": "site/public/media/journey/small/006.webp",
+      "bytes": 13820
+    },
+    {
+      "path": "site/public/media/journey/small/007.webp",
+      "bytes": 13782
+    },
+    {
+      "path": "site/public/media/journey/small/008.webp",
+      "bytes": 13808
+    },
+    {
+      "path": "site/public/media/journey/small/009.webp",
+      "bytes": 13922
+    },
+    {
+      "path": "site/public/media/journey/small/010.webp",
+      "bytes": 14058
+    },
+    {
+      "path": "site/public/media/journey/small/011.webp",
+      "bytes": 13862
+    },
+    {
+      "path": "site/public/media/journey/small/012.webp",
+      "bytes": 13920
+    },
+    {
+      "path": "site/public/media/journey/small/013.webp",
+      "bytes": 14028
+    },
+    {
+      "path": "site/public/media/journey/small/014.webp",
+      "bytes": 14046
+    },
+    {
+      "path": "site/public/media/journey/small/015.webp",
+      "bytes": 13996
+    },
+    {
+      "path": "site/public/media/journey/small/016.webp",
+      "bytes": 14028
+    },
+    {
+      "path": "site/public/media/journey/small/017.webp",
+      "bytes": 14264
+    },
+    {
+      "path": "site/public/media/journey/small/018.webp",
+      "bytes": 14080
+    },
+    {
+      "path": "site/public/media/journey/small/019.webp",
+      "bytes": 13976
+    },
+    {
+      "path": "site/public/media/journey/small/020.webp",
+      "bytes": 14162
+    },
+    {
+      "path": "site/public/media/journey/small/021.webp",
+      "bytes": 14086
+    },
+    {
+      "path": "site/public/media/journey/small/022.webp",
+      "bytes": 14244
+    },
+    {
+      "path": "site/public/media/journey/small/023.webp",
+      "bytes": 14084
+    },
+    {
+      "path": "site/public/media/journey/small/024.webp",
+      "bytes": 14290
+    },
+    {
+      "path": "site/public/media/journey/small/025.webp",
+      "bytes": 14316
+    },
+    {
+      "path": "site/public/media/journey/small/026.webp",
+      "bytes": 14498
+    },
+    {
+      "path": "site/public/media/journey/small/027.webp",
+      "bytes": 14558
+    },
+    {
+      "path": "site/public/media/journey/small/028.webp",
+      "bytes": 14656
+    },
+    {
+      "path": "site/public/media/journey/small/029.webp",
+      "bytes": 14612
+    },
+    {
+      "path": "site/public/media/journey/small/030.webp",
+      "bytes": 14632
+    },
+    {
+      "path": "site/public/media/journey/small/031.webp",
+      "bytes": 14746
+    },
+    {
+      "path": "site/public/media/journey/small/032.webp",
+      "bytes": 14646
+    },
+    {
+      "path": "site/public/media/journey/small/033.webp",
+      "bytes": 14720
+    },
+    {
+      "path": "site/public/media/journey/small/034.webp",
+      "bytes": 14808
+    },
+    {
+      "path": "site/public/media/journey/small/035.webp",
+      "bytes": 14782
+    },
+    {
+      "path": "site/public/media/journey/small/036.webp",
+      "bytes": 14846
+    },
+    {
+      "path": "site/public/media/journey/small/037.webp",
+      "bytes": 14826
+    },
+    {
+      "path": "site/public/media/journey/small/038.webp",
+      "bytes": 15068
+    },
+    {
+      "path": "site/public/media/journey/small/039.webp",
+      "bytes": 14976
+    },
+    {
+      "path": "site/public/media/journey/small/040.webp",
+      "bytes": 14952
+    },
+    {
+      "path": "site/public/media/journey/small/041.webp",
+      "bytes": 14850
+    },
+    {
+      "path": "site/public/media/journey/small/042.webp",
+      "bytes": 14936
+    },
+    {
+      "path": "site/public/media/journey/small/043.webp",
+      "bytes": 14994
+    },
+    {
+      "path": "site/public/media/journey/small/044.webp",
+      "bytes": 15022
+    },
+    {
+      "path": "site/public/media/journey/small/045.webp",
+      "bytes": 15096
+    },
+    {
+      "path": "site/public/media/journey/small/046.webp",
+      "bytes": 15018
+    },
+    {
+      "path": "site/public/media/journey/small/047.webp",
+      "bytes": 15102
+    },
+    {
+      "path": "site/public/media/journey/small/048.webp",
+      "bytes": 15144
+    },
+    {
+      "path": "site/public/media/journey/small/049.webp",
+      "bytes": 15262
+    },
+    {
+      "path": "site/public/media/journey/small/050.webp",
+      "bytes": 15312
+    },
+    {
+      "path": "site/public/media/journey/small/051.webp",
+      "bytes": 15308
+    },
+    {
+      "path": "site/public/media/journey/small/052.webp",
+      "bytes": 15216
+    },
+    {
+      "path": "site/public/media/journey/small/053.webp",
+      "bytes": 15296
+    },
+    {
+      "path": "site/public/media/journey/small/054.webp",
+      "bytes": 15258
+    },
+    {
+      "path": "site/public/media/journey/small/055.webp",
+      "bytes": 15404
+    },
+    {
+      "path": "site/public/media/journey/small/056.webp",
+      "bytes": 15192
+    },
+    {
+      "path": "site/public/media/journey/small/057.webp",
+      "bytes": 15280
+    },
+    {
+      "path": "site/public/media/journey/small/058.webp",
+      "bytes": 15072
+    },
+    {
+      "path": "site/public/media/journey/small/059.webp",
+      "bytes": 15320
+    },
+    {
+      "path": "site/public/media/journey/small/060.webp",
+      "bytes": 15024
+    },
+    {
+      "path": "site/public/media/journey/small/061.webp",
+      "bytes": 15046
+    },
+    {
+      "path": "site/public/media/journey/small/062.webp",
+      "bytes": 15074
+    },
+    {
+      "path": "site/public/media/journey/small/063.webp",
+      "bytes": 15124
+    },
+    {
+      "path": "site/public/media/journey/small/064.webp",
+      "bytes": 15202
+    },
+    {
+      "path": "site/public/media/journey/small/065.webp",
+      "bytes": 15516
+    },
+    {
+      "path": "site/public/media/journey/small/066.webp",
+      "bytes": 15236
+    },
+    {
+      "path": "site/public/media/journey/small/067.webp",
+      "bytes": 15228
+    },
+    {
+      "path": "site/public/media/journey/small/068.webp",
+      "bytes": 15218
+    },
+    {
+      "path": "site/public/media/journey/small/069.webp",
+      "bytes": 15260
+    },
+    {
+      "path": "site/public/media/journey/small/070.webp",
+      "bytes": 15124
+    },
+    {
+      "path": "site/public/media/journey/small/071.webp",
+      "bytes": 15224
+    },
+    {
+      "path": "site/public/media/journey/small/072.webp",
+      "bytes": 15196
+    },
+    {
+      "path": "site/public/media/journey/small/073.webp",
+      "bytes": 15180
+    },
+    {
+      "path": "site/public/media/journey/small/074.webp",
+      "bytes": 15074
+    },
+    {
+      "path": "site/public/media/journey/small/075.webp",
+      "bytes": 15200
+    },
+    {
+      "path": "site/public/media/journey/small/076.webp",
+      "bytes": 15330
+    },
+    {
+      "path": "site/public/media/journey/small/077.webp",
+      "bytes": 15182
+    },
+    {
+      "path": "site/public/media/journey/small/078.webp",
+      "bytes": 15242
+    },
+    {
+      "path": "site/public/media/journey/small/079.webp",
+      "bytes": 15264
+    },
+    {
+      "path": "site/public/media/journey/small/080.webp",
+      "bytes": 15282
+    },
+    {
+      "path": "site/public/media/journey/small/081.webp",
+      "bytes": 15328
+    },
+    {
+      "path": "site/public/media/journey/small/082.webp",
+      "bytes": 15368
+    },
+    {
+      "path": "site/public/media/journey/small/083.webp",
+      "bytes": 15238
+    },
+    {
+      "path": "site/public/media/journey/small/084.webp",
+      "bytes": 15142
+    },
+    {
+      "path": "site/public/media/journey/small/085.webp",
+      "bytes": 15410
+    },
+    {
+      "path": "site/public/media/journey/small/086.webp",
+      "bytes": 15204
+    },
+    {
+      "path": "site/public/media/journey/small/087.webp",
+      "bytes": 15214
+    },
+    {
+      "path": "site/public/media/journey/small/088.webp",
+      "bytes": 15158
+    },
+    {
+      "path": "site/public/media/journey/small/089.webp",
+      "bytes": 15240
+    },
+    {
+      "path": "site/public/media/journey/small/090.webp",
+      "bytes": 15270
+    },
+    {
+      "path": "site/public/media/journey/small/091.webp",
+      "bytes": 15406
+    },
+    {
+      "path": "site/public/media/journey/small/092.webp",
+      "bytes": 15462
+    },
+    {
+      "path": "site/public/media/journey/small/093.webp",
+      "bytes": 15516
+    },
+    {
+      "path": "site/public/media/journey/small/094.webp",
+      "bytes": 15386
+    },
+    {
+      "path": "site/public/media/journey/small/095.webp",
+      "bytes": 15308
+    },
+    {
+      "path": "site/public/media/journey/small/096.webp",
+      "bytes": 15452
+    }
+  ],
+  "bytesByVariant": {
+    "small": 1423714,
+    "large": 2555730
+  },
+  "originalSource": "assets/blender/journey/surf-journey.blend",
+  "generationScript": "assets/blender/journey/create_journey.py",
+  "exportScript": "scripts/export_journey.py",
+  "renderLog": "assets/blender/journey/render.log",
+  "rights": "Original procedural Blender meshes, materials, character and animation. No third-party model or texture dependencies.",
+  "deliveryPacks": {
+    "large": [
+      {
+        "first": 1,
+        "last": 12,
+        "url": "packs/large/001-b5a40e59f82f.sbj",
+        "bytes": 299695
+      },
+      {
+        "first": 13,
+        "last": 24,
+        "url": "packs/large/013-b48d19106b01.sbj",
+        "bytes": 304913
+      },
+      {
+        "first": 25,
+        "last": 36,
+        "url": "packs/large/025-40b848efa067.sbj",
+        "bytes": 313539
+      },
+      {
+        "first": 37,
+        "last": 48,
+        "url": "packs/large/037-fff0bec2bb81.sbj",
+        "bytes": 321233
+      },
+      {
+        "first": 49,
+        "last": 60,
+        "url": "packs/large/049-b96dc950e745.sbj",
+        "bytes": 329307
+      },
+      {
+        "first": 61,
+        "last": 72,
+        "url": "packs/large/061-e3df96373f71.sbj",
+        "bytes": 329787
+      },
+      {
+        "first": 73,
+        "last": 84,
+        "url": "packs/large/073-06c8910d8b5f.sbj",
+        "bytes": 329813
+      },
+      {
+        "first": 85,
+        "last": 96,
+        "url": "packs/large/085-b833452da6b8.sbj",
+        "bytes": 331665
+      }
+    ],
+    "small": [
+      {
+        "first": 1,
+        "last": 12,
+        "url": "packs/small/001-1890d34e8ec4.sbj",
+        "bytes": 166894
+      },
+      {
+        "first": 13,
+        "last": 24,
+        "url": "packs/small/013-903df77d53ad.sbj",
+        "bytes": 169809
+      },
+      {
+        "first": 25,
+        "last": 36,
+        "url": "packs/small/025-b65acf26ffa2.sbj",
+        "bytes": 176346
+      },
+      {
+        "first": 37,
+        "last": 48,
+        "url": "packs/small/037-2897ed94fe93.sbj",
+        "bytes": 180510
+      },
+      {
+        "first": 49,
+        "last": 60,
+        "url": "packs/small/049-617d2755d133.sbj",
+        "bytes": 183470
+      },
+      {
+        "first": 61,
+        "last": 72,
+        "url": "packs/small/061-29df9f04b672.sbj",
+        "bytes": 182974
+      },
+      {
+        "first": 73,
+        "last": 84,
+        "url": "packs/small/073-4a6d62c7ca8f.sbj",
+        "bytes": 183356
+      },
+      {
+        "first": 85,
+        "last": 96,
+        "url": "packs/small/085-9b94ebf93684.sbj",
+        "bytes": 184552
+      }
+    ]
+  },
+  "packScript": "scripts/pack_journey.py",
+  "packNote": "Unchanged original WebP frames; 12 frames per content-addressed pack. 8 requests per viewport variant."
+}
