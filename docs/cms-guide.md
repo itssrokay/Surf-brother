@@ -13,6 +13,8 @@ The GitHub App is already connected. The repository-root `.pages.yml` defines si
 
 The editors share `site/src/content.json`. `settings.content.merge: true` is essential: saving one editor must preserve the other sections, source records, seasonal guide and animation chapters. Do not disable it. Course days, session counts, nights and internal meal IDs are protected. Stay & Surf price/discount calculation assumptions remain unconfirmed and require developer changes after owner confirmation.
 
+Pages CMS omits empty/null properties when saving. Missing price/discount bases still mean “unconfirmed”; they never enable a calculated Stay & Surf total. Its merge replaces submitted arrays, so every managed array's identity/metadata fields are included in the schema, including the hidden meal price basis.
+
 ## Prices and text
 
 Enter prices as numbers in rupees, without `₹` or commas. Leave “No meal add-on” at 0. Rates automatically update the package selector, comparison tables and WhatsApp summary.
@@ -38,6 +40,8 @@ New uploads go to `site/uploads/photos` and are referenced as `/media/uploads/..
 At build time Sharp generates WebP exports capped at 1440px and 640px, strips metadata, and writes content-hashed URLs. The generated thumbnail replaces the old thumbnail automatically when an existing gallery photo is replaced. Raw uploads are outside `public`, so visitors receive the optimized versions. Unused uploads are not included in the deployment. Animation packs and Blender sources are outside the CMS media folder. Video replacement remains a developer task.
 
 ## Connect Vercel
+
+The configured Git project is **surf-brothers-mulki**: https://surf-brothers-mulki.vercel.app/. The original https://surfbrothers-mulki.vercel.app/ was a separate Drop upload. Use the Git-connected project for CMS edits. During setup its initial repository-root/Other settings returned 404 despite a Ready deployment. They were corrected to the settings below; `site/vercel.json` now records the build commands as well as caching headers.
 
 In the Vercel project, verify **Settings → Git** points to `itssrokay/Surf-brother`. A standalone Vercel Drop upload will not update from CMS saves until Git is connected.
 
@@ -67,3 +71,11 @@ Run `npm test` and `npm run build` from `site/`. The package tests use a fixed o
 Before editing locally, `git pull --ff-only` to bring in CMS commits. All public content remains in `site/src/content.json`; `content.js` resolves the supported copy markers. `cms-plugin.js` validates content and prepares uploaded photos during Vite builds/development. Generated media is ignored by Git.
 
 References checked October 10, 2026: [Pages CMS quick start](https://pagescms.org/docs/quick-start/), [merge settings](https://pagescms.org/docs/configuration/settings/), [collaborators](https://pagescms.org/docs/configuration/collaborators/), [Vercel Git deployments](https://vercel.com/docs/git).
+
+## Setup verification — October 10, 2026
+
+- The authenticated dashboard loads all six editors and displays existing photos from the correct GitHub media paths.
+- Actual text and price saves were tested on an isolated `cms-setup-verification` branch. The saved price retained the complete package fields, meal bases, gallery, animation chapters, seasonal content and FAQs. Its text-save snapshot passed all 22 tests and a production build using only tracked source. No test value was merged into `main`; the temporary remote branch was removed.
+- Local production gallery thumbnails and full-size modal loaded successfully; no console warnings/errors or unresolved FAQ markers were found.
+- New-image tests exercised real JPEG-to-WebP resizing, metadata stripping and content-hashed URL changes.
+- Owner invitation remains pending the owner's agreed email; no invitation or school message was sent.
