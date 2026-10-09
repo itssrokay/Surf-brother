@@ -77,5 +77,6 @@ References checked October 10, 2026: [Pages CMS quick start](https://pagescms.or
 - The authenticated dashboard loads all six editors and displays existing photos from the correct GitHub media paths.
 - Actual text and price saves were tested on an isolated `cms-setup-verification` branch. The saved price retained the complete package fields, meal bases, gallery, animation chapters, seasonal content and FAQs. Its text-save snapshot passed all 22 tests and a production build using only tracked source. No test value was merged into `main`; the temporary remote branch was removed.
 - Local production gallery thumbnails and full-size modal loaded successfully; no console warnings/errors or unresolved FAQ markers were found.
+- Vercel production commit `5a1e0b8` reached Ready with the corrected `site` root / Vite / `npm ci` / `npm run build` / `dist` settings. The public URL rendered correctly, all eight generated gallery thumbnails loaded, the default package rate remained ₹9,000, and the browser console was clear. The original Drop deployment and the separate `surf-brother` project were not changed.
 - New-image tests exercised real JPEG-to-WebP resizing, metadata stripping and content-hashed URL changes.
 - Owner invitation remains pending the owner's agreed email; no invitation or school message was sent.

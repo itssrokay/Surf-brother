@@ -8,7 +8,7 @@ Motion across the page includes a brief wave opening, staggered headline reveal,
 
 ## Preview and run
 
-The updated production preview is served locally at **http://127.0.0.1:4173/**. The server is bound to this Mac's loopback interface. The user separately deployed an earlier copy at https://surfbrothers-mulki.vercel.app/. This enhancement has not been uploaded or published by the agent.
+The updated production preview is served locally at **http://127.0.0.1:4173/**. The server is bound to this Mac's loopback interface. The user separately deployed an earlier Drop copy at https://surfbrothers-mulki.vercel.app/. The Git-connected project at https://surf-brothers-mulki.vercel.app/ now serves the CMS-enabled version; saving CMS content triggers a new Vercel build. Its `site/` root and Vite build settings were corrected and the live site verified during the October 10 CMS setup.
 
 From this project folder:
 
