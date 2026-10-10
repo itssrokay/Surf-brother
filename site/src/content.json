@@ -44,7 +44,7 @@
         {
           "days": 1,
           "sessions": 1,
-          "rate": 2000
+          "rate": 20000
         },
         {
           "days": 3,
@@ -79,7 +79,7 @@
       "payment": "Full payment confirms booking. No refund after booking.",
       "private": {
         "label": "Private 1:1 training",
-        "rate": 30000,
+        "rate": 3000,
         "basis": "per person per session",
         "inclusions": [
           "Private 1:1 surf training"
