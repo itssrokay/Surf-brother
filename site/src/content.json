@@ -79,7 +79,7 @@
       "payment": "Full payment confirms booking. No refund after booking.",
       "private": {
         "label": "Private 1:1 training",
-        "rate": 3000,
+        "rate": 30000,
         "basis": "per person per session",
         "inclusions": [
           "Private 1:1 surf training"
@@ -89,7 +89,6 @@
     },
     "staySurf": {
       "label": "Stay & Surf",
-      "priceBasis": null,
       "accommodation": [
         {
           "id": "camping",
@@ -189,9 +188,7 @@
         4
       ],
       "label": "{{offerAmount}} off Stay & Surf for Monday–Thursday check-ins, subject to availability.",
-      "terms": "Not valid for Surf Only. Cannot be combined with other offers. Ask the team to confirm eligibility and the discount basis.",
-      "basis": null,
-      "expiry": null
+      "terms": "Not valid for Surf Only. Cannot be combined with other offers. Ask the team to confirm eligibility and the discount basis."
     },
     "weather": "All surf sessions are subject to ocean and weather conditions.",
     "unresolvedAssumptions": [
@@ -221,7 +218,6 @@
       "heading": "Good coaching starts with a conversation.",
       "description": "Instructor guidance is part of every group course. Tell the team about your experience and water confidence so they can discuss the right start for you.",
       "confirmation": "Ask who will coach your dates, their qualifications and how the group is organised. The current instructor roster is being confirmed.",
-      "names": [],
       "verified": false
     }
   },
