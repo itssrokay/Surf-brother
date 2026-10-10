@@ -82,3 +82,10 @@ References checked October 10, 2026: [Pages CMS quick start](https://pagescms.or
 - Vercel production commit `5a1e0b8` reached Ready with the corrected `site` root / Vite / `npm ci` / `npm run build` / `dist` settings. The public URL rendered correctly, all eight generated gallery thumbnails loaded, the default package rate remained ₹9,000, and the browser console was clear. The original Drop deployment and the separate `surf-brother` project were not changed.
 - New-image tests exercised real JPEG-to-WebP resizing, metadata stripping and content-hashed URL changes.
 - Owner invitation remains pending the owner's agreed email; no invitation or school message was sent.
+
+## Homepage photo extension — October 10, 2026
+
+- Added **Homepage photos & captions** for the opening and daily-routine photographs, visible captions and screen-reader descriptions. Renamed the existing stay editor to **Stay gallery & captions** and the shared media library to **Website photos**.
+- All 23 tests and the production build passed. Tests include a homepage-only upload, escaped captions and the initial hero preload pointing to the selected optimized image.
+- The authenticated Pages CMS dashboard displays both image previews and their existing captions. The Git-connected live site serves the generated opening image with its matching preload and renders the evening caption; no browser console warnings/errors were found during verification.
+- Existing CMS content, including the latest price edits, was preserved.
