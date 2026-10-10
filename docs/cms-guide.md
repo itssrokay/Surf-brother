@@ -2,12 +2,12 @@
 
 Dashboard: https://app.pagescms.org/itssrokay/surf-brother/main
 
-The GitHub App is already connected. The repository-root `.pages.yml` defines six editors. No database, API key or customer-data backend is added to the public website.
+The GitHub App is already connected. The repository-root `.pages.yml` defines seven editors. No database, API key or customer-data backend is added to the public website.
 
 ## Editing
 
 1. Open the dashboard and select `main`.
-2. Open **Business & contact**, **Package prices**, **Inclusions & booking terms**, **Stay & photo gallery**, **Frequently asked questions**, or **Life & getting here**.
+2. Open **Business & contact**, **Package prices**, **Inclusions & booking terms**, **Homepage photos & captions**, **Stay gallery & captions**, **Frequently asked questions**, or **Life & getting here**.
 3. Change the fields and select **Save**. Each save creates a GitHub commit.
 4. With Vercel connected to this GitHub repository, wait for its deployment to finish, then refresh the website. A CMS save is not proof of a successful deployment; check Vercel if the website has not updated.
 
@@ -33,7 +33,9 @@ Ordinary text is treated as text rather than HTML. Contact numbers have three fi
 
 ## Photos
 
-In **Stay & photo gallery**, edit a photograph or add an item. Give each new item a unique lowercase ID (e.g. `garden-morning`), caption, screen-reader description and Rooms/Camping/Shared spaces category. Select or upload the main photograph, then save the gallery. Uploading a file by itself does not add it to the page.
+In **Homepage photos & captions**, choose the opening photograph and the photograph beside the daily routine. Edit their short visible captions and screen-reader descriptions. The opening photo also has an optional second caption line. Landscape photos work best at the top; portrait photos work best beside the routine. Save after selecting a photo.
+
+In **Stay gallery & captions**, edit a photograph or add an item. Give each new item a unique lowercase ID (e.g. `garden-morning`), caption, screen-reader description and Rooms/Camping/Shared spaces category. Select or upload the main photograph, then save the gallery. Uploading a file by itself does not add it to the page.
 
 New uploads go to `site/uploads/photos` and are referenced as `/media/uploads/...`. JPEG, PNG and WebP are supported. Use photos under 15 MB and 40 megapixels; convert HEIC before upload. Use only photos approved for the website. Keep the existing IDs when editing existing images.
 
@@ -56,7 +58,7 @@ Output Directory: dist
 Production Branch: main
 ```
 
-`site/vercel.json` supplies caching rules for Git builds. `site/public/vercel.json` supplies the same headers in the Drop archive. Keep their headers synchronized. The build validates contact numbers, course structures, rates, gallery IDs and local photo files before deployment. An invalid edit fails the new build; correct it in the CMS and save again. The production site remains on its previous successful deployment.
+`site/vercel.json` supplies caching rules for Git builds. `site/public/vercel.json` supplies the same headers in the Drop archive. Keep their headers synchronized. The build validates contact numbers, course structures, rates, gallery IDs, homepage captions and local photo files before deployment. An invalid edit fails the new build; correct it in the CMS and save again. The production site remains on its previous successful deployment.
 
 ## Give the owner access
 
@@ -68,7 +70,7 @@ For full handover, also arrange ownership of the GitHub repository, Vercel proje
 
 Run `npm test` and `npm run build` from `site/`. The package tests use a fixed original owner-rate fixture so legitimate CMS price edits do not require editing unit tests. CMS tests cover edited prices/FAQ consistency, invalid content, legacy/new image paths and actual image compression. The original rates remain in `site/src/fixtures/owner-packages.json` as a test fixture, not the live content source.
 
-Before editing locally, `git pull --ff-only` to bring in CMS commits. All public content remains in `site/src/content.json`; `content.js` resolves the supported copy markers. `cms-plugin.js` validates content and prepares uploaded photos during Vite builds/development. Generated media is ignored by Git.
+Before editing locally, `git pull --ff-only` to bring in CMS commits. All public content remains in `site/src/content.json`; `content.js` resolves the supported copy markers. `cms-plugin.js` validates content and prepares uploaded photos during Vite builds/development. Generated media is ignored by Git. The hero image, caption and matching preload are rendered into the initial HTML during build, so replacing the hero does not trigger a second download of the old photo.
 
 References checked October 10, 2026: [Pages CMS quick start](https://pagescms.org/docs/quick-start/), [merge settings](https://pagescms.org/docs/configuration/settings/), [collaborators](https://pagescms.org/docs/configuration/collaborators/), [Vercel Git deployments](https://vercel.com/docs/git).
 

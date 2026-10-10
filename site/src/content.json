@@ -7,6 +7,19 @@
     "location": "Chitrapu Village, Mulki, Karnataka",
     "address": "Door No. 20-63, Chitrapu Village, Mulki, Kilpady, Karnataka 574154"
   },
+  "homepage": {
+    "hero": {
+      "file": "/media/uploads/hero.webp",
+      "alt": "The SurfBrothers house and outdoor grounds among coconut palms in Mulki",
+      "caption": "THIS IS OUR LITTLE CORNER OF MULKI.",
+      "secondaryCaption": "MAKE YOURSELF AT HOME."
+    },
+    "evening": {
+      "file": "/media/uploads/img_8272.webp",
+      "alt": "SurfBrothers house under evening lights",
+      "caption": "A DIFFERENT KIND OF NIGHTLIFE."
+    }
+  },
   "contacts": {
     "phones": [
       {

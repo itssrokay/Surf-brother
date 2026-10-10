@@ -8,7 +8,7 @@ import sharp from 'sharp';
 import { resolveContentCopy, escapeHTML } from './content-copy.js';
 import { validateContent } from './content-validation.js';
 import { galleryPhoto, mediaPath } from './media-paths.js';
-import { preparePhotos } from '../cms-plugin.js';
+import { preparePhotos, renderHomepageHTML } from '../cms-plugin.js';
 import { composeEnquiry } from './packages.js';
 
 const source = JSON.parse(await readFile(new URL('./content.json', import.meta.url)));
@@ -69,11 +69,31 @@ test('invalid CMS edits stop a build before broken prices or gallery IDs publish
     c => { c.gallery[1].id = c.gallery[0].id; },
     c => { c.contacts.phones[0].whatsapp = '123'; },
     c => { c.gallery[0].file = '../originals/private.jpg'; },
+    c => { c.homepage.hero.file = '/media/uploads/../escape.jpg'; },
+    c => { c.homepage.evening.alt = ''; },
   ]) {
     const edited = structuredClone(source);
     mutate(edited);
     assert.throws(() => validateContent(edited));
   }
+});
+
+test('homepage edits render into initial HTML with a matching preload and safe captions', async () => {
+  const edited = structuredClone(source);
+  edited.homepage.hero = {
+    file: '/media/uploads/new-hero.jpg',
+    alt: 'Our "home" < by the palms',
+    caption: 'Garden & waves <script>bad()</script>',
+    // Pages CMS removes an empty optional second caption on save.
+  };
+  const manifest = { '/media/uploads/new-hero.jpg': { full: '/media/cms-generated/new-1440.webp' } };
+  const template = await readFile(new URL('../index.html', import.meta.url), 'utf8');
+  const html = renderHomepageHTML(template, edited, manifest);
+  assert.match(html, /rel="preload" href="\/media\/cms-generated\/new-1440.webp" as="image"/);
+  assert.match(html, /src="\/media\/cms-generated\/new-1440.webp"/);
+  assert.match(html, /alt="Our &quot;home&quot; &lt; by the palms"/);
+  assert.match(html, /Garden &amp; waves &lt;script&gt;bad\(\)&lt;\/script&gt;/);
+  assert.doesNotMatch(html, /__CMS_HERO_|\/media\/hero.webp|undefined|<script>bad/);
 });
 
 test('new photos use generated thumbnails while existing filenames still work', () => {
@@ -93,7 +113,8 @@ test('photo uploads produce bounded WebP sizes, strip metadata and change URLs o
     const original = await sharp({ create: { width: 2400, height: 1800, channels: 3, background: '#0c8585' } })
       .withMetadata().jpeg({ quality: 95 }).toBuffer();
     await writeFile(path.join(root, 'uploads/photos/test.jpg'), original);
-    const content = { gallery: [{ file: '/media/uploads/test.jpg' }] };
+    // A homepage-only upload must be generated even when absent from the gallery.
+    const content = { gallery: [], homepage: { hero: { file: '/media/uploads/test.jpg' } } };
     const first = await preparePhotos(root, content);
     for (const [kind, expectedWidth] of [['full', 1440], ['thumb', 640]]) {
       const file = path.join(root, 'public', first['/media/uploads/test.jpg'][kind]);

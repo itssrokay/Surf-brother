@@ -1,7 +1,7 @@
 # SurfBrothers owner dashboard. Multiple editors share one file: merge MUST stay enabled.
 media:
   - name: photos
-    label: Upload stay photos
+    label: Website photos
     input: site/uploads/photos
     output: /media/uploads
     extensions:
@@ -318,8 +318,63 @@ content:
             label: Ocean and weather condition note
             type: text
             required: true
+  - name: homepage
+    label: Homepage photos & captions
+    type: file
+    path: site/src/content.json
+    format: json
+    fields:
+      - name: homepage
+        label: Homepage photographs
+        type: object
+        fields:
+          - name: hero
+            label: Opening photograph
+            type: object
+            description: The large photograph at the top of the website. A landscape photo works best.
+            fields:
+              - name: file
+                label: Opening photo
+                type: image
+                required: true
+                options:
+                  media: photos
+              - name: caption
+                label: Opening caption
+                type: string
+                required: true
+                description: Keep this short so it fits over the photograph.
+              - name: secondaryCaption
+                label: Second caption line (optional)
+                type: string
+              - name: alt
+                label: Describe the opening photo
+                type: text
+                required: true
+                description: Describe what the photograph shows for visitors using a screen reader.
+          - name: evening
+            label: Life at the stay photograph
+            type: object
+            description: The photograph beside the daily routine. A portrait photo works best.
+            fields:
+              - name: file
+                label: Life at the stay photo
+                type: image
+                required: true
+                options:
+                  media: photos
+              - name: caption
+                label: Life at the stay caption
+                type: string
+                required: true
+                description: A short line displayed over this photograph.
+              - name: alt
+                label: Describe the life at the stay photo
+                type: text
+                required: true
+                description: Describe what the photograph shows for visitors using a screen reader.
   - name: stay
-    label: Stay & photo gallery
+    label: Stay gallery & captions
     type: file
     path: site/src/content.json
     format: json
@@ -341,7 +396,7 @@ content:
             type: text
             required: true
       - name: gallery
-        label: Stay photographs
+        label: Gallery photos & captions
         type: object
         fields:
           - name: id

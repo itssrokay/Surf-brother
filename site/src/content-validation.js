@@ -24,6 +24,11 @@ export function validateContent(c) {
   require(p.meals?.length === 3 && ['none', 'veg', 'nonVeg'].every(id => p.meals.filter(x => x.id === id).length === 1), 'Keep all three meal options.');
   require(p.meals.every(x => rate(x.rate)) && p.meals.find(x => x.id === 'none').rate === 0, 'Meal rates must be valid; no add-on stays ₹0.');
   require(rate(p.offer.amount), 'Offer amount is invalid.');
+  for (const key of ['hero', 'evening']) {
+    const photo = c.homepage?.[key];
+    require(photo?.alt?.trim() && photo?.caption?.trim(), `${key} photo needs a description and caption.`);
+    require(mediaPath(photo.file), `${key} photo needs a local image.`);
+  }
   require(c.gallery?.length >= 1 && c.gallery.length <= 24, 'Keep between 1 and 24 gallery photos.');
   const ids = new Set();
   for (const photo of c.gallery) {
